@@ -1,0 +1,10 @@
+.logo {
+  float: left;
+  padding: 1rem;
+  background-color: rgb(31, 31, 31);
+  color: aliceblue;
+  margin: 2rem;
+  width: 10rem;
+  height: 3rem;
+  max-width: 25%;
+}
