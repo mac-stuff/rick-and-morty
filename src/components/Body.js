@@ -1,9 +1,9 @@
-import image from "../assets/me.jpeg";
 import "./Body.css";
-import PageAboutMe from "./PageAboutMe";
-import PageCharacterList from "./PageCharacterList";
-import PageToDo from "./PageToDo";
-import PageContact from "./PageContact";
+import image from "../assets/me.jpeg";
+import PageAboutMe from "../components/aboutme-components/PageAboutMe";
+import PageCharacterList from "../components/character-components/PageCharacterList";
+import PageToDo from "../components/todo-components/PageToDo";
+import PageContact from "../components/contact-components/PageContact";
 import name from "../assets/TextNameSurname";
 import aboutMe from "../assets/TextAboutMe.js";
 import contact from "../assets/TextContact";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import MessageContent from "./MessageContent";
 import "./PageContact.css";
+import MessageContent from "./MessageContent";
 
 const PageContact = (props) => {
   const [email, setEmail] = useState("");

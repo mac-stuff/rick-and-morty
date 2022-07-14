@@ -1,6 +1,6 @@
 import "./PageCharacterList.css";
 import Card from "./Card";
-import Pagination from "./Pagination";
+import Pagination from "../character-components/Pagination";
 import React, { useState, useEffect } from "react";
 
 const PageCharacterList = (props) => {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./PageToDo.css";
-import Header from "../components/todo-components/Header";
-import Tasks from "../components/todo-components/Tasks";
-import AddTask from "../components/todo-components/AddTask";
-import ChangeLogo from "./todo-components/ChangeLogo";
+import Tasks from "./Tasks";
+import AddTask from "./AddTask";
+import Header from "./Header";
+import ChangeLogo from "./ChangeLogo";
 
 const PageToDo = (props) => {
   const [showAddTask, setShowAddTask] = useState(false);
