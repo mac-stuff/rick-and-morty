@@ -1,2 +1,2 @@
-const name = "Name Surname";
+const name = "LOREM IPSUM";
 export default name;

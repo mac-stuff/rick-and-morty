@@ -1,79 +1,51 @@
-/* .body {
-  height: 50rem;
-  background-color: #9747ff;
-  border-radius: 15px;
-  padding: 1rem;
-  margin: 5px;
-  max-width: 97%;
-  width: 100%;
-  text-align: center;
+.about-me {
+  height: 100%;
+  background-color: tomato;
 }
-
 .image {
   border-radius: 50%;
   padding: 20px;
+  background-color: tomato;
 }
-
-.button-53 {
-  background-color: #ffa629;
-  border: 0 solid #e5e7eb;
-  box-sizing: border-box;
-  color: #000000;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.75rem;
+.about-me-data {
+  background-color: tomato;
+}
+.about-me-data > .name,
+.cv {
+  background-color: rgb(215, 255, 71);
   padding: 20px;
-  text-align: center;
-  text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 220px;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 0.3rem;
+  margin: 10px;
+  border-radius: 15px;
 }
-
-@media (min-width: 768px) {
-  .button-53 {
-    padding: 0.75rem 3rem;
-    font-size: 1.25rem;
-  }
-}
-
-.text {
-  background-color: #ffa629;
-  border: 0 solid #e5e7eb;
-  box-sizing: border-box;
-  color: #000000;
-  display: inline-block;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.75rem;
+.about-me-form {
+  background-color: tomato;
   padding: 20px;
-  text-align: center;
-  text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 1220px;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 0.3rem;
-} */
+  margin: 10px;
+  border-radius: 15px;
+}
 
-.about-me {
-  height: 100%;
+label {
+  background-color: tomato;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+::placeholder {
+  text-align: center;
+}
+.about-me-input {
+  background-color: rgb(233, 220, 227);
+  border-style: hidden;
+  border-radius: 5px;
+}
+.about-me-button {
+  background-color: rgb(215, 255, 71);
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.about-me-button:active {
+  background-color: deeppink;
 }

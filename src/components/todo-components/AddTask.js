@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./AddTask.css";
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState("");
@@ -35,7 +36,7 @@ const AddTask = ({ onAdd }) => {
           onChange={(e) => setDay(e.target.value)}
         />
       </div>
-      <input type="submit" value="save task" className="btn btn-block" />
+      <input type="submit" value="save task" className="button" />
     </form>
   );
 };

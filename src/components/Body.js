@@ -2,7 +2,6 @@ import "./Body.css";
 import image from "../assets/me.jpeg";
 import name from "../assets/TextNameSurname";
 import aboutMe from "../assets/TextAboutMe.js";
-import contact from "../assets/TextContact";
 import PageAboutMe from "../components/aboutme-components/PageAboutMe";
 import PageCharacterList from "../components/character-components/PageCharacterList";
 import PageToDo from "../components/todo-components/PageToDo";
@@ -23,7 +22,7 @@ const Body = ({ selectedButton, setLogo, logo, setLogoText }) => {
       {selectedButton.text === "todo" && (
         <PageToDo setLogo={setLogo} logo={logo} />
       )}
-      {selectedButton.text === "contact" && <PageContact contact={contact} />}
+      {selectedButton.text === "contact" && <PageContact />}
     </div>
   );
 };

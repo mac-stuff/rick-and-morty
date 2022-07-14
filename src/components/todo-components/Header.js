@@ -1,9 +1,11 @@
+import "./Header.css";
+
 const Header = ({ title, onAdd }) => {
   return (
-    <header className="header">
-      <h1>{title}</h1>
-      <button className="btn" onClick={onAdd}>
-        add task
+    <header>
+      <h3 className="title">{title}</h3>
+      <button className="button" onClick={onAdd}>
+        add new task
       </button>
     </header>
   );

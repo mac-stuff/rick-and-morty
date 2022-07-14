@@ -10,11 +10,16 @@ const PageToDo = (props) => {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: "First Meeting at School",
-      day: "5-06-2022",
+      text: "”Sometimes science is more art than science.”",
+      day: "20-01-2021",
+    },
+    {
+      id: 2,
+      text: "”Weddings are basically funerals with a cake.”",
+      day: "05-09-2021",
     },
   ]);
-  const [title, setTitle] = useState(`You have ${tasks.length} to do.`);
+  const [title, setTitle] = useState(`You have ${tasks.length} task`);
 
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
@@ -29,14 +34,14 @@ const PageToDo = (props) => {
   };
 
   return (
-    <div className="body">
+    <div className="todo-body">
       <Header onAdd={() => setShowAddTask(!showAddTask)} title={title} />
+      {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} />
       ) : (
         "No Tasks To Show"
       )}
-      {showAddTask && <AddTask onAdd={addTask} />}
       <ChangeLogo setLogo={props.setLogo} logo={props.logo} />
     </div>
   );

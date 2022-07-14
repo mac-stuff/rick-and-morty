@@ -13,17 +13,27 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
     setLogoText(message.toString());
     setMessage("");
   };
+
   return (
     <div className="about-me">
       <img src={image} alt="" className="image" />
-      <div className="data-container">
-        <div className="button-53">{name}</div>
-        <div className="text">{cv}</div>
+      <div className="about-me-data">
+        <div className="name">{name}</div>
+        <div className="cv">{cv}</div>
       </div>
-      <form onSubmit={submitHandler}>
-        <label>message</label>
-        <input type="text" value={message} onChange={messageHandler}></input>
-        <button className="button-53" type="submit">
+
+      <form className="about-me-form" onSubmit={submitHandler}>
+        <label>add funny text to logo</label>
+        <br />
+        <input
+          className="about-me-input"
+          placeholder="add text"
+          type="text"
+          value={message}
+          onChange={messageHandler}
+        ></input>
+        <br />
+        <button className="about-me-button" type="submit">
           sent
         </button>
       </form>
