@@ -1,12 +1,12 @@
 import "./Body.css";
 import image from "../assets/me.jpeg";
+import name from "../assets/TextNameSurname";
+import aboutMe from "../assets/TextAboutMe.js";
+import contact from "../assets/TextContact";
 import PageAboutMe from "../components/aboutme-components/PageAboutMe";
 import PageCharacterList from "../components/character-components/PageCharacterList";
 import PageToDo from "../components/todo-components/PageToDo";
 import PageContact from "../components/contact-components/PageContact";
-import name from "../assets/TextNameSurname";
-import aboutMe from "../assets/TextAboutMe.js";
-import contact from "../assets/TextContact";
 
 const Body = ({ selectedButton, setLogo, logo, setLogoText }) => {
   return (
