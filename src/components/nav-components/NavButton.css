@@ -1,4 +1,4 @@
-.button-53 {
+/* .button-53 {
   background-color: #ffa629;
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
@@ -50,4 +50,15 @@
     padding: 0.75rem 3rem;
     font-size: 1.25rem;
   }
+} */
+
+.nav-button {
+  background-color: tomato;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+.nav-button:focus {
+  background-color: deeppink;
 }

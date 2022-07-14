@@ -1,4 +1,4 @@
-.logo {
+/* .logo {
   float: left;
   padding: 1rem;
   background-color: rgb(31, 31, 31);
@@ -7,4 +7,10 @@
   width: 10rem;
   height: 3rem;
   max-width: 25%;
+} */
+
+.logo {
+  float: left;
+  cursor: pointer;
+  background-color: tomato;
 }

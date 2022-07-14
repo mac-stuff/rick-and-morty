@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import Nav from "./components/nav-components/Nav";
+import Navigation from "./components/nav-components/Navigation";
 import Body from "./components/Body";
+import Footer from "./components/Footer";
 
 function App() {
   const [selectedButton, setSelectedButton] = useState("about me");
@@ -9,18 +10,27 @@ function App() {
   const [logoText, setLogoText] = useState("");
 
   return (
-    <div className="App">
-      <Nav
-        setSelectedButton={setSelectedButton}
-        logo={logo}
-        logoText={logoText}
-      />
-      <Body
-        selectedButton={selectedButton}
-        logo={logo}
-        setLogo={setLogo}
-        setLogoText={setLogoText}
-      />
+    <div className="wrapper">
+      <div className="header">
+        <Navigation
+          setSelectedButton={setSelectedButton}
+          logo={logo}
+          logoText={logoText}
+        />
+      </div>
+      <div className="main">
+        <Body
+          selectedButton={selectedButton}
+          logo={logo}
+          setLogo={setLogo}
+          setLogoText={setLogoText}
+        />
+      </div>
+      <div className="aside aside1"></div>
+      <div className="aside aside2"></div>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

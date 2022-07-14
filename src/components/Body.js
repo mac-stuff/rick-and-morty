@@ -10,7 +10,7 @@ import PageContact from "../components/contact-components/PageContact";
 
 const Body = ({ selectedButton, setLogo, logo, setLogoText }) => {
   return (
-    <div>
+    <div className="body">
       {selectedButton.text === "about me" && (
         <PageAboutMe
           image={image}

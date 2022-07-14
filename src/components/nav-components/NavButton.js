@@ -7,7 +7,7 @@ const NavButton = ({ text, setSelectedButton }) => {
   };
 
   return (
-    <button className="button-53" onClick={() => onButtonClick({ text })}>
+    <button className="nav-button" onClick={() => onButtonClick({ text })}>
       {text}
     </button>
   );

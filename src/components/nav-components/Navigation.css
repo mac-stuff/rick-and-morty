@@ -1,8 +1,16 @@
-.nav {
+/* .navigation {
   border-radius: 15px;
   padding: 0.1rem;
   background-color: #9747ff;
   margin: 5px;
   max-width: 99%;
   height: 150px;
+} */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: tomato;
 }

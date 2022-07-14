@@ -14,7 +14,7 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
     setMessage("");
   };
   return (
-    <div className="body">
+    <div className="about-me">
       <img src={image} alt="" className="image" />
       <div className="data-container">
         <div className="button-53">{name}</div>

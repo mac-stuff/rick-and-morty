@@ -3,7 +3,7 @@ import "./Logo.css";
 const Logo = ({ logo, logoText }) => {
   return (
     <div className="logo">
-      <div>{logo ? "nowe logo " + logoText : "logo " + logoText}</div>
+      {logo ? "NOWE LOGO " + logoText : "LOGO " + logoText}
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Navigation = ({ setSelectedButton, logo, logoText }) => {
   return (
-    <div className="nav">
+    <div className="navigation">
       <Logo logo={logo} logoText={logoText} />
       <NavButtons setSelectedButton={setSelectedButton} />
     </div>
