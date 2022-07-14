@@ -8,14 +8,21 @@ import name from "../assets/TextNameSurname";
 import aboutMe from "../assets/TextAboutMe.js";
 import contact from "../assets/TextContact";
 
-const Body = ({ selectedButton }) => {
+const Body = ({ selectedButton, setLogo, logo, setLogoText }) => {
   return (
     <div>
       {selectedButton.text === "about me" && (
-        <PageAboutMe image={image} name={name} cv={aboutMe} />
+        <PageAboutMe
+          image={image}
+          name={name}
+          cv={aboutMe}
+          setLogoText={setLogoText}
+        />
       )}
       {selectedButton.text === "character list" && <PageCharacterList />}
-      {selectedButton.text === "todo" && <PageToDo />}
+      {selectedButton.text === "todo" && (
+        <PageToDo setLogo={setLogo} logo={logo} />
+      )}
       {selectedButton.text === "contact" && <PageContact contact={contact} />}
     </div>
   );

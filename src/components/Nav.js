@@ -2,10 +2,10 @@ import NavButtons from "./NavButtons";
 import Logo from "./Logo";
 import "./Nav.css";
 
-const Nav = ({ logo, setSelectedButton }) => {
+const Nav = ({ setSelectedButton, logo, logoText }) => {
   return (
     <div className="nav">
-      <Logo logo={logo} />
+      <Logo logo={logo} logoText={logoText} />
       <NavButtons setSelectedButton={setSelectedButton} />
     </div>
   );

@@ -1,9 +1,9 @@
 import "./Logo.css";
 
-const Logo = (props) => {
+const Logo = ({ logo, logoText }) => {
   return (
     <div className="logo">
-      <img src={props.logo} width="150" height="75" alt="" />
+      <div>{logo ? "nowe logo " + logoText : "logo " + logoText}</div>
     </div>
   );
 };

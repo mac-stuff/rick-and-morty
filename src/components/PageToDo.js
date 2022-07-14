@@ -3,6 +3,7 @@ import "./PageToDo.css";
 import Header from "../components/todo-components/Header";
 import Tasks from "../components/todo-components/Tasks";
 import AddTask from "../components/todo-components/AddTask";
+import ChangeLogo from "./todo-components/ChangeLogo";
 
 const PageToDo = (props) => {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -36,6 +37,7 @@ const PageToDo = (props) => {
         "No Tasks To Show"
       )}
       {showAddTask && <AddTask onAdd={addTask} />}
+      <ChangeLogo setLogo={props.setLogo} logo={props.logo} />
     </div>
   );
 };
