@@ -5,7 +5,6 @@ const NavButton = ({ text, setSelectedButton }) => {
     setSelectedButton(mode);
     console.log(mode.text);
   };
-
   return (
     <button className="nav-button" onClick={() => onButtonClick({ text })}>
       {text}
