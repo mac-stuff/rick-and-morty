@@ -1,10 +1,8 @@
-.text-container {
-  background-color: tomato;
-  margin: 20px;
-  padding: 20px;
-}
-.text {
+.task,
+.fa {
   background-color: rgb(215, 255, 71);
+  padding: 20px;
+  margin: 10px;
   border-radius: 15px;
   font-family: Arial;
   font-size: 15px;

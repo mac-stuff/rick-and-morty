@@ -18,15 +18,11 @@ const PageCharacterList = (props) => {
 
   return (
     <div className="body">
-      <div className="button-53">CHARACTERS</div>
-      <div className="container">
-        <div className="row">
-          <div className="col-8">
-            <div className="row">
-              <Card results={results} />
-            </div>
-          </div>
-        </div>
+      <div className="title">Rick and Morty characters</div>
+      <div className="card">
+        <Card results={results} />
+      </div>
+      <div className="pagination">
         <Pagination
           info={info}
           pageNumber={pageNumber}

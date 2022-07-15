@@ -30,13 +30,13 @@ const AddTask = ({ onAdd }) => {
       </div>
       <div className="form-control">
         <input
-          type="day"
+          type="date"
+          value="2022-07-13"
           placeholder="add day"
-          value={day}
           onChange={(e) => setDay(e.target.value)}
         />
       </div>
-      <input type="submit" value="save task" className="button" />
+      <input type="submit" value="save task" className="add-button" />
     </form>
   );
 };

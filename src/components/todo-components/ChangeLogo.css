@@ -1,0 +1,14 @@
+.button {
+  background-color: rgb(215, 255, 71);
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 10px;
+}
+.button:active {
+  background-color: deeppink;
+}
+.button-container {
+  background-color: tomato;
+  padding: 130;
+  margin: 150;
+}

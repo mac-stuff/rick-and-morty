@@ -10,6 +10,10 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    if (!message) {
+      alert("add a text first");
+      return;
+    }
     setLogoText(message.toString());
     setMessage("");
   };
@@ -23,7 +27,6 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
       </div>
 
       <form className="about-me-form" onSubmit={submitHandler}>
-        <label>add funny text to logo</label>
         <br />
         <input
           className="about-me-input"
@@ -34,7 +37,7 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
         ></input>
         <br />
         <button className="about-me-button" type="submit">
-          sent
+          costom logo
         </button>
       </form>
     </div>

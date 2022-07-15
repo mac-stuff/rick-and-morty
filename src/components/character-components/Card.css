@@ -1,0 +1,23 @@
+.card {
+  background-color: tomato;
+  float: left;
+}
+.card-image {
+  border-radius: 75%;
+  width: 20%;
+  height: 20%;
+  padding: 10px;
+  margin: 15px;
+  background-color: rgb(215, 255, 71);
+}
+.card-content {
+  background-color: tomato;
+}
+.card-text {
+  font-family: Arial;
+  font-size: 15px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: normal;
+  background-color: tomato;
+}

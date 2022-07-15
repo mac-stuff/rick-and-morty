@@ -9,13 +9,13 @@ input {
   border-style: hidden;
   border-radius: 5px;
 }
-
-.button {
+.add-button {
   background-color: rgb(215, 255, 71);
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 10px;
+  border-style: groove;
 }
-.button:active {
+.add-button:active {
   background-color: deeppink;
 }

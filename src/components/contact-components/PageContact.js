@@ -18,6 +18,16 @@ const PageContact = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+
+    if (!email) {
+      alert("add a email first");
+      return;
+    }
+
+    if (!message) {
+      alert("add a message first");
+      return;
+    }
     setIsSent(true);
     setData(email + " write message to you: " + message);
     setEmail("");
@@ -26,17 +36,31 @@ const PageContact = (props) => {
 
   return (
     <div className="body">
-      <form onSubmit={submitHandler}>
-        <div className="button-53">WRITE MESSAGE</div>
-        <label>e-mail</label>
-        <input type="email" value={email} onChange={emailHandler}></input>
-        <label>message</label>
-        <input type="text" value={message} onChange={messageHandler}></input>
-        <button className="button-53" type="submit">
+      <form className="form" onSubmit={submitHandler}>
+        <div className="text-up">write message</div>
+        <input
+          className="input"
+          type="email"
+          value={email}
+          onChange={emailHandler}
+          placeholder="email"
+        ></input>
+        <br />
+        <input
+          className="input-text"
+          type="text"
+          value={message}
+          onChange={messageHandler}
+          placeholder="message"
+        ></input>
+        <br />
+        <button className="button" type="submit">
           sent
         </button>
       </form>
-      <div>{isSent ? <MessageContent data={data} /> : "nie wysne"}</div>
+      <div className="message-content">
+        {isSent ? <MessageContent data={data} /> : ""}
+      </div>
     </div>
   );
 };

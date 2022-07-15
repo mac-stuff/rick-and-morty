@@ -1,3 +1,5 @@
+import "./ChangeLogo.css";
+
 const ChangeLogo = ({ setLogo, logo }) => {
   const onButtonClick = () => {
     {
@@ -5,8 +7,8 @@ const ChangeLogo = ({ setLogo, logo }) => {
     }
   };
   return (
-    <div>
-      <button className="button-53" onClick={onButtonClick}>
+    <div className="button-container">
+      <button className="button" onClick={onButtonClick}>
         change logo
       </button>
     </div>

@@ -1,0 +1,11 @@
+.footer-text {
+  background-color: tomato;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: normal;
+}

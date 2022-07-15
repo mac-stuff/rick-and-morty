@@ -19,7 +19,7 @@
 .main {
   text-align: center;
   background: tomato;
-  height: 1000px;
+  min-height: 600px;
   font-size: 24px;
 }
 .aside1 {

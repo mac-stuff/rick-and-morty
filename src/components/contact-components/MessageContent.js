@@ -1,7 +1,9 @@
+import "./MessageContent.css";
+
 const MessageContent = ({ data }) => {
   return (
-    <div>
-      <div className="button-53">{data}</div>
+    <div className="text-container">
+      <div className="text">{data}</div>
     </div>
   );
 };

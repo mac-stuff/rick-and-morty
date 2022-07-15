@@ -1,3 +1,5 @@
+import "./Card.css";
+
 const Card = ({ results }) => {
   let display = "";
 
@@ -6,16 +8,12 @@ const Card = ({ results }) => {
       const { id, name, image, species, status } = result;
 
       return (
-        <div key={id} className="col-4">
-          <div className="">
-            <img src={image} alt="" className="img-fluid" />
-            <div className="content">
-              <div className="fs-4">{name}</div>
-              <div className="fs-5">
-                <div>{species}</div>
-                <div>{status}</div>
-              </div>
-            </div>
+        <div key={id} className="card">
+          <img src={image} alt="~" className="card-image" />
+          <div className="card-content">
+            <div className="card-text">{name}</div>
+            <div className="card-text">{species}</div>
+            <div className="card-text">{status}</div>
           </div>
         </div>
       );
