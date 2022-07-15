@@ -13,6 +13,11 @@ const AddTask = ({ onAdd }) => {
       return;
     }
 
+    if (!day) {
+      alert("add a date first");
+      return;
+    }
+
     onAdd({ text, day });
     setText("");
     setDay("");

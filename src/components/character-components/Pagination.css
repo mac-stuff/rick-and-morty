@@ -1,13 +1,23 @@
-/* .button {
-  background-color: rgb(215, 255, 71);
-  font-size: 15px;
-  border-radius: 15px;
-  margin: 10px;
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: tomato;
 }
-.button:active {
-  background-color: deeppink;
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid;
+  color: black;
+  cursor: pointer;
+  background-color: tomato;
 }
-.card-pagination {
-  position: fixed;
-  bottom: 0px;
-} */
+.paginationBttns a:hover {
+  background-color: yellow;
+}
+.paginationBttns li {
+  background-color: tomato;
+}

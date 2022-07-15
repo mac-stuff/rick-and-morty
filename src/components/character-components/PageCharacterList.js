@@ -1,7 +1,7 @@
 import "./PageCharacterList.css";
-import Card from "./Card";
-import Pagination from "../character-components/Pagination";
 import React, { useState, useEffect } from "react";
+import Card from "./Card";
+import Pagination from "./Pagination";
 
 const PageCharacterList = (props) => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -17,12 +17,12 @@ const PageCharacterList = (props) => {
   }, [api]);
 
   return (
-    <div className="body">
-      <div className="title">Rick and Morty characters</div>
-      <div className="card">
+    <div className="wrapper">
+      <div className="header">Rick and Morty characters</div>
+      <div className="main">
         <Card results={results} />
       </div>
-      <div className="pagination">
+      <div className="footer">
         <Pagination
           info={info}
           pageNumber={pageNumber}
@@ -32,4 +32,5 @@ const PageCharacterList = (props) => {
     </div>
   );
 };
+
 export default PageCharacterList;
