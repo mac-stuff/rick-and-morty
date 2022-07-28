@@ -10,15 +10,8 @@ import PageContact from "../components/contact-components/PageContact";
 const Body = ({ selectedButton, setLogo, logo, setLogoText }) => {
   return (
     <div className="body">
-      {selectedButton === "about me" && (
-        <PageAboutMe
-          image={image}
-          name={name}
-          cv={aboutMe}
-          setLogoText={setLogoText}
-        />
-      )}
-      {selectedButton.text === "about me" && (
+      {(selectedButton === "about me" ||
+        selectedButton.text === "about me") && (
         <PageAboutMe
           image={image}
           name={name}

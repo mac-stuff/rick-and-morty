@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   background-color: tomato;
+  cursor: pointer;
 }
 .paginationBttns a {
   padding: 10px;

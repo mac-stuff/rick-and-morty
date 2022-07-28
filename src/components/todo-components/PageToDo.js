@@ -5,7 +5,7 @@ import AddTask from "./AddTask";
 import ToDoHeader from "./ToDoHeader";
 import ChangeLogo from "./ChangeLogo";
 
-const PageToDo = (props) => {
+const PageToDo = ({ setLogo, logo }) => {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([
     {
@@ -48,7 +48,7 @@ const PageToDo = (props) => {
         "No Tasks To Show"
       )}
       <div className="change-logo">
-        <ChangeLogo setLogo={props.setLogo} logo={props.logo} />
+        <ChangeLogo setLogo={setLogo} logo={logo} />
       </div>
     </div>
   );

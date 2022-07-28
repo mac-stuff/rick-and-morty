@@ -16,6 +16,11 @@
 .header {
   background-color: tomato;
   height: 100px;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: normal;
 }
 .main {
   text-align: center;
@@ -32,6 +37,11 @@
 .footer {
   background: tomato;
   height: 80px;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: normal;
 }
 @media all and (min-width: 800px) {
   .main {
