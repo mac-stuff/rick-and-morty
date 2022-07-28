@@ -1,8 +1,8 @@
-/* .card {
+.person {
   background-color: tomato;
   float: left;
 }
-.card-image {
+.person-image {
   border-radius: 75%;
   width: 20%;
   height: 20%;
@@ -10,14 +10,14 @@
   margin: 15px;
   background-color: rgb(215, 255, 71);
 }
-.card-content {
+.person-content {
   background-color: tomato;
 }
-.card-text {
+.person-text {
   font-family: Arial;
   font-size: 15px;
   line-height: normal;
   text-align: center;
   letter-spacing: normal;
   background-color: tomato;
-} */
+}
