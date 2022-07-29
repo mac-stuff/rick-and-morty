@@ -2,6 +2,9 @@ import ReactPaginate from "react-paginate";
 import "./Pagination.css";
 
 const Pagination = ({ info, pageNumber, setPageNumber }) => {
+  console.log(info);
+  console.log(pageNumber);
+
   return (
     <ReactPaginate
       previosLabel="Prev"

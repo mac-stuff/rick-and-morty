@@ -6,7 +6,7 @@ const Card = ({ results }) => {
 
   if (results) {
     display = results.map((result) => {
-      return <Person result={result} />;
+      return <Person result={result} key={result.id} />;
     });
   }
 
