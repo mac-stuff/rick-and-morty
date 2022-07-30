@@ -40,7 +40,7 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
           onChange={messageHandler}
         ></input>
         <br />
-        <Button variant="primary" color="primary" type="submit">
+        <Button variant="outlined" color="primary" type="submit">
           costom logo
         </Button>
       </form>

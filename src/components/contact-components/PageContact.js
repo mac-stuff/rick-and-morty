@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MessageContent from "./MessageContent";
+import { Button } from "@mui/material";
 
 const PageContact = (props) => {
   const [email, setEmail] = useState("");
@@ -53,9 +54,7 @@ const PageContact = (props) => {
           placeholder="message"
         ></input>
         <br />
-        <button className="button" type="submit">
-          sent
-        </button>
+        <Button type="submit">sent</Button>
       </form>
       <div className="message-content">
         {isSent ? <MessageContent data={data} /> : ""}
