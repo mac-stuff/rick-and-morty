@@ -1,5 +1,3 @@
-import "./MessageContent.css";
-
 const MessageContent = ({ data }) => {
   return (
     <div className="text-container">

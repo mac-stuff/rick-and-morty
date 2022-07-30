@@ -1,13 +1,13 @@
-import "./Navigation.css";
 import NavButtons from "./NavButtons";
 import Logo from "./Logo";
+import { Box } from "@mui/material";
 
 const Navigation = ({ setSelectedButton, logo, logoText }) => {
   return (
-    <div className="navigation">
+    <Box sx={{ display: "flex" }}>
       <Logo logo={logo} logoText={logoText} />
       <NavButtons setSelectedButton={setSelectedButton} />
-    </div>
+    </Box>
   );
 };
 

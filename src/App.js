@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./App.css";
 import Navigation from "./components/nav-components/Navigation";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import { Container } from "@mui/material";
 
 function App() {
   const [selectedButton, setSelectedButton] = useState("about me");
@@ -10,14 +10,13 @@ function App() {
   const [logoText, setLogoText] = useState("");
 
   return (
-    <div className="wrapper">
-      <div className="header">
-        <Navigation
-          setSelectedButton={setSelectedButton}
-          logo={logo}
-          logoText={logoText}
-        />
-      </div>
+    <Container maxWidth="lg">
+      <Navigation
+        setSelectedButton={setSelectedButton}
+        logo={logo}
+        logoText={logoText}
+      />
+
       <div className="main">
         <Body
           selectedButton={selectedButton}
@@ -31,7 +30,7 @@ function App() {
       <div className="footer">
         <Footer />
       </div>
-    </div>
+    </Container>
   );
 }
 

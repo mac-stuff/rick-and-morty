@@ -1,5 +1,5 @@
-import "./PageAboutMe.css";
 import React, { useState } from "react";
+import { Typography, Button } from "@mui/material";
 
 const PageAboutMe = ({ image, name, cv, setLogoText }) => {
   const [message, setMessage] = useState("");
@@ -22,8 +22,12 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
     <div className="about-me">
       <img src={image} alt="" className="image" />
       <div className="about-me-data">
-        <div className="name">{name}</div>
-        <div className="cv">{cv}</div>
+        <Typography variant="h6" gutterBottom color="textSecondary">
+          {name}
+        </Typography>
+        <Typography variant="body1" gutterBottom color="textSecondary">
+          {cv}
+        </Typography>
       </div>
 
       <form className="about-me-form" onSubmit={submitHandler}>
@@ -36,9 +40,9 @@ const PageAboutMe = ({ image, name, cv, setLogoText }) => {
           onChange={messageHandler}
         ></input>
         <br />
-        <button className="about-me-button" type="submit">
+        <Button variant="primary" color="primary" type="submit">
           costom logo
-        </button>
+        </Button>
       </form>
     </div>
   );

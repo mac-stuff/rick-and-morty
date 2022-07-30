@@ -1,4 +1,3 @@
-import "./Body.css";
 import image from "../assets/me.jpeg";
 import name from "../assets/TextNameSurname";
 import aboutMe from "../assets/TextAboutMe.js";

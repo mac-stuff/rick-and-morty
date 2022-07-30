@@ -1,4 +1,4 @@
-import "./NavButton.css";
+import { Button, Typography } from "@mui/material";
 
 const NavButton = ({ text, setSelectedButton }) => {
   const onButtonClick = (mode) => {
@@ -6,9 +6,11 @@ const NavButton = ({ text, setSelectedButton }) => {
     console.log(mode.text);
   };
   return (
-    <button className="nav-button" onClick={() => onButtonClick({ text })}>
-      {text}
-    </button>
+    <Button onClick={() => onButtonClick({ text })}>
+      <Typography variant="h5" align="center">
+        {text}
+      </Typography>
+    </Button>
   );
 };
 

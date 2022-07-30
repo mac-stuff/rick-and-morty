@@ -1,5 +1,3 @@
-import "./Logo.css";
-
 const Logo = ({ logo, logoText }) => {
   return (
     <div className="logo">

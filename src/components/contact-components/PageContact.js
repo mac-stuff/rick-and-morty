@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./PageContact.css";
 import MessageContent from "./MessageContent";
 
 const PageContact = (props) => {

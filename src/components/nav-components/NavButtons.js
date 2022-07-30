@@ -1,4 +1,3 @@
-import "./NavButtons.css";
 import NavButton from "./NavButton";
 
 const NavButtons = ({ setSelectedButton }) => {

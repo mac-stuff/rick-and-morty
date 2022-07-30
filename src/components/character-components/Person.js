@@ -1,5 +1,3 @@
-import "./Person.css";
-
 const Person = ({ result: { id, image, name, species, status } }) => {
   return (
     <div key={id} className="person">

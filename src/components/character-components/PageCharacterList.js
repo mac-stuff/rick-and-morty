@@ -1,4 +1,3 @@
-import "./PageCharacterList.css";
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Pagination from "./Pagination";

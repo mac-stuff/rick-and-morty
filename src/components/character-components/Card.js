@@ -1,4 +1,3 @@
-import "./Card.css";
 import Person from "./Person";
 
 const Card = ({ results }) => {
