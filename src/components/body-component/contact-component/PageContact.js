@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import MessageContent from "./MessageContent";
-import { Button } from "@mui/material";
+import { Container, Button, TextField } from "@mui/material";
 
-const PageContact = (props) => {
+const PageContact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
@@ -35,31 +35,30 @@ const PageContact = (props) => {
   };
 
   return (
-    <div className="body">
-      <form className="form" onSubmit={submitHandler}>
-        <div className="text-up">write message</div>
-        <input
-          className="input"
-          type="email"
-          value={email}
+    <Container>
+      <form onSubmit={submitHandler}>
+        <TextField
+          id="filled-basic"
+          label="add a email"
+          variant="filled"
           onChange={emailHandler}
-          placeholder="email"
-        ></input>
-        <br />
-        <input
-          className="input-text"
-          type="text"
-          value={message}
+          value={email}
+        ></TextField>
+        <TextField
+          id="filled-basic"
+          label="add a message"
+          variant="filled"
           onChange={messageHandler}
-          placeholder="message"
-        ></input>
-        <br />
-        <Button type="submit">sent</Button>
+          value={message}
+        ></TextField>
+        <Button variant="contained" color="primary" type="submit" size="medium">
+          sent
+        </Button>
       </form>
       <div className="message-content">
         {isSent ? <MessageContent data={data} /> : ""}
       </div>
-    </div>
+    </Container>
   );
 };
 export default PageContact;

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card";
+import Characters from "./Characters";
 import Pagination from "./Pagination";
+import { Container, Grid } from "@mui/material";
 
-const PageCharacterList = (props) => {
+const CharacterList = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [fetchedData, setFetchedData] = useState([]);
   const { info, results } = fetchedData;
@@ -16,20 +17,19 @@ const PageCharacterList = (props) => {
   }, [api]);
 
   return (
-    <div className="wrapper">
-      <div className="header">Rick and Morty characters</div>
-      <div className="main">
-        <Card results={results} />
-      </div>
-      <div className="footer">
+    <Container>
+      <Grid container>
+        <Characters results={results} />
+      </Grid>
+      <Grid container>
         <Pagination
           info={info}
           pageNumber={pageNumber}
           setPageNumber={setPageNumber}
         />
-      </div>
-    </div>
+      </Grid>
+    </Container>
   );
 };
 
-export default PageCharacterList;
+export default CharacterList;

@@ -1,9 +1,9 @@
 import { FaTimes } from "react-icons/fa";
-import "./ToDoTask.css";
+import { Container } from "@mui/material";
 
 const ToDoTask = ({ task, onDelete }) => {
   return (
-    <div className="task">
+    <Container>
       {task.text}
       <FaTimes
         className="fa"
@@ -12,7 +12,7 @@ const ToDoTask = ({ task, onDelete }) => {
       />
       <br />
       {task.day}
-    </div>
+    </Container>
   );
 };
 

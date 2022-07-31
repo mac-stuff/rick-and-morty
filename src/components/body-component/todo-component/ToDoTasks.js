@@ -1,13 +1,13 @@
 import ToDoTask from "./ToDoTask";
-import "./ToDoTasks.css";
+import { Container } from "@mui/material";
 
 const ToDoTasks = ({ tasks, onDelete }) => {
   return (
-    <div className="tasks">
+    <Container>
       {tasks.map((task) => (
         <ToDoTask key={task.id} task={task} onDelete={onDelete} />
       ))}
-    </div>
+    </Container>
   );
 };
 
