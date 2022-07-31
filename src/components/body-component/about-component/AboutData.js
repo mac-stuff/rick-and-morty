@@ -1,11 +1,23 @@
 import image from "../assets/image.jpeg";
 import data from "../assets/data.js";
-import { Container, Avatar, Typography } from "@mui/material";
+import { Box, CardMedia, Typography } from "@mui/material";
 
 const AboutMeData = () => {
   return (
-    <Container>
-      <Avatar src={image} alt={data.name} sx={{ width: 300, height: 300 }} />
+    <Box
+      justifyContent={"center"}
+      alignItems={"center"}
+      displey={"flex"}
+      sx={{ margin: "25px" }}
+    >
+      <CardMedia
+        component="img"
+        sx={{
+          pt: "35%",
+        }}
+        image={image}
+        alt={data.name}
+      />
       <Typography
         component="h1"
         variant="h2"
@@ -18,7 +30,7 @@ const AboutMeData = () => {
       <Typography variant="h5" align="center" color="text.secondary" paragraph>
         {data.cv}
       </Typography>
-    </Container>
+    </Box>
   );
 };
 

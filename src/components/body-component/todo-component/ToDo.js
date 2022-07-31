@@ -30,7 +30,6 @@ const ToDo = ({ logo, setLogo }) => {
         <Container sx={{ py: 8 }} maxWidth="md">
           <Button
             variant="outlined"
-            gutterBottom
             onClick={() => setShowAddTask(!showAddTask)}
             size="medium"
           >
