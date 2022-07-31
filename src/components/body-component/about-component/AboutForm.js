@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, TextField, Button } from "@mui/material";
+import { Container, Stack, TextField, Button } from "@mui/material";
 
 const AboutMeForm = ({ setLogoText }) => {
   const [newLogoText, setNewLogoText] = useState("");
@@ -20,18 +20,18 @@ const AboutMeForm = ({ setLogoText }) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <Container>
+      <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
         <TextField
           id="filled-basic"
-          label="add a custom logo text"
+          label="custom logo"
           variant="filled"
           value={newLogoText}
           onChange={messageHandler}
         ></TextField>
-        <Button variant="contained" color="primary" type="submit" size="medium">
+        <Button variant="outlined" color="primary" type="submit" size="medium">
           send
         </Button>
-      </Container>
+      </Stack>
     </form>
   );
 };

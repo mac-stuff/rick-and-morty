@@ -2,7 +2,7 @@ import NavButton from "./NavButton";
 import { AppBar, Toolbar, Typography, Stack } from "@mui/material";
 
 const Nav = ({ setSelectedButton, logo, logoText }) => {
-  const buttons = ["about me", "characters", "todo", "contact"];
+  const buttons = ["about", "characters", "todo", "contact"];
 
   return (
     <AppBar position="static">

@@ -1,12 +1,12 @@
-import AboutMeData from "./AboutMeData";
-import AboutMeForm from "./AboutMeForm";
+import AboutData from "./AboutData";
+import AboutForm from "./AboutForm";
 import { Container } from "@mui/material";
 
 const AboutMe = ({ setLogoText }) => {
   return (
     <Container>
-      <AboutMeData />
-      <AboutMeForm setLogoText={setLogoText} />
+      <AboutData />
+      <AboutForm setLogoText={setLogoText} />
     </Container>
   );
 };

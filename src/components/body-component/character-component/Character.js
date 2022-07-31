@@ -1,19 +1,35 @@
-import { Grid, Card, Avatar, Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import Characters from "./Characters";
+import Pagination from "./Pagination";
+import { Container, Grid } from "@mui/material";
 
-const Character = ({ result: { image, name, species, status } }) => {
+const CharacterList = () => {
+  const [pageNumber, setPageNumber] = useState(1);
+  const [fetchedData, setFetchedData] = useState([]);
+  const { info, results } = fetchedData;
+  const api = `https://rickandmortyapi.com/api/character?page=${pageNumber}`;
+
+  useEffect(() => {
+    (async function () {
+      let data = await fetch(api).then((res) => res.json());
+      setFetchedData(data);
+    })();
+  }, [api]);
+
   return (
-    <Grid item xs={12} md={6} lg={4}>
-      <Card sx={{ maxWidth: 220 }}>
-        <Avatar src={image} alt={name} sx={{ width: 120, height: 120 }} />
-        <Typography variant="body1" gutterBottom color="textSecondary">
-          {name}
-        </Typography>
-        <Typography variant="body1" gutterBottom color="textSecondary">
-          {species} - {status}
-        </Typography>
-      </Card>
-    </Grid>
+    <Container>
+      <Grid container>
+        <Characters results={results} />
+      </Grid>
+      <Grid container>
+        <Pagination
+          info={info}
+          pageNumber={pageNumber}
+          setPageNumber={setPageNumber}
+        />
+      </Grid>
+    </Container>
   );
 };
 
-export default Character;
+export default CharacterList;

@@ -1,19 +1,18 @@
-import AboutMe from "./aboutme-component/AboutMe";
-import CharacterList from "./character-component/CharacterList";
+import About from "./about-component/About";
+import Character from "./character-component/Character";
 import ToDo from "./todo-component/ToDo";
-import PageContact from "./contact-component/PageContact";
+import Contact from "./contact-component/Contact";
 import { Container } from "@mui/material";
 
 const Body = ({ selectedButton, setLogo, logo, setLogoText }) => {
   return (
     <Container>
-      {(selectedButton === "about me" ||
-        selectedButton.text === "about me") && (
-        <AboutMe setLogoText={setLogoText} />
+      {(selectedButton === "about" || selectedButton.text === "about") && (
+        <About setLogoText={setLogoText} />
       )}
-      {selectedButton.text === "characters" && <CharacterList />}
+      {selectedButton.text === "characters" && <Character />}
       {selectedButton.text === "todo" && <ToDo setLogo={setLogo} logo={logo} />}
-      {selectedButton.text === "contact" && <PageContact />}
+      {selectedButton.text === "contact" && <Contact />}
     </Container>
   );
 };

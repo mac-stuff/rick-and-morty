@@ -3,8 +3,8 @@ import { Container, Typography } from "@mui/material";
 const Footer = () => {
   return (
     <Container>
-      <Typography variant="h6" color="textSecondary" gutterBottom>
-        rick and morty 2022 ®
+      <Typography variant="h6" align="center" gutterBottom>
+        Rick and Morty
       </Typography>
     </Container>
   );
