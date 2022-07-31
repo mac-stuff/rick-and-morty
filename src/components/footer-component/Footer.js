@@ -1,12 +1,12 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Footer = () => {
   return (
-    <Container>
+    <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
       <Typography variant="h6" align="center" gutterBottom>
         Rick and Morty
       </Typography>
-    </Container>
+    </Box>
   );
 };
 

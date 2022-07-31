@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import { Container, Stack, TextField, Button } from "@mui/material";
+import { Stack, TextField, Button } from "@mui/material";
 
-const AboutMeForm = ({ setLogoText }) => {
-  const [newLogoText, setNewLogoText] = useState("");
+const AboutMeForm = ({ logo, setLogo }) => {
+  const [customLogo, setCustomLogo] = useState("");
 
-  const messageHandler = (event) => {
-    setNewLogoText(event.target.value);
+  const logoHandler = (event) => {
+    setCustomLogo(event.target.value);
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
-    if (!newLogoText) {
+    if (!customLogo) {
       alert("add a text first");
       return;
     }
-    setLogoText(newLogoText.toString());
-    setNewLogoText("");
+    const split = logo.split(" ");
+    split[0] === "LOGO"
+      ? setLogo(split[0] + " " + customLogo)
+      : setLogo(split[0] + " " + split[1] + " " + customLogo);
+    setCustomLogo("");
   };
 
   return (
@@ -25,8 +28,8 @@ const AboutMeForm = ({ setLogoText }) => {
           id="filled-basic"
           label="custom logo"
           variant="filled"
-          value={newLogoText}
-          onChange={messageHandler}
+          value={customLogo}
+          onChange={logoHandler}
         ></TextField>
         <Button variant="outlined" color="primary" type="submit" size="medium">
           send

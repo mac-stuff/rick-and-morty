@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TextField, Button } from "@mui/material";
+import { Box, Container, Stack, TextField, Button } from "@mui/material";
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState("");
@@ -24,29 +24,44 @@ const AddTask = ({ onAdd }) => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <TextField
-        id="filled-basic"
-        label="add a task"
-        variant="filled"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      ></TextField>
-      <TextField
-        id="date"
-        label="add a date"
-        type="date"
-        defaultValue="2022-07-13"
-        sx={{ width: 220 }}
-        InputLabelProps={{
-          shrink: true,
-        }}
-        onChange={(e) => setDay(e.target.value)}
-      />
-      <Button variant="contained" color="primary" type="submit" size="medium">
-        save task
-      </Button>
-    </form>
+    <Box sx={{ bgcolor: "background.paper", pt: 8, pb: 6 }}>
+      <Container sx={{ py: 8 }} maxWidth="md">
+        <form onSubmit={onSubmit}>
+          <Stack
+            sx={{ pt: 4 }}
+            direction="row"
+            spacing={2}
+            justifyContent="center"
+          >
+            <TextField
+              variant="filled"
+              label="add task"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+            ></TextField>
+            <TextField
+              variant="filled"
+              label="add a date"
+              type="date"
+              defaultValue="2022-07-13"
+              sx={{ width: 220 }}
+              InputLabelProps={{
+                shrink: true,
+              }}
+              onChange={(e) => setDay(e.target.value)}
+            ></TextField>
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              size="medium"
+            >
+              send
+            </Button>
+          </Stack>
+        </form>
+      </Container>
+    </Box>
   );
 };
 

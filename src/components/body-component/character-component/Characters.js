@@ -1,48 +1,6 @@
-import {
-  Container,
-  Grid,
-  Card,
-  Avatar,
-  Typography,
-  CardMedia,
-  CardContent,
-  CardActions,
-  Button,
-} from "@mui/material";
+import { Grid, Card, Typography, CardMedia, CardContent } from "@mui/material";
 
 const Characters = ({ results }) => {
-  //   return (
-  //     <Grid container spacing={4}>
-  //       {results.map((result) => (
-  //         <Grid item key={result.id} xs={12} sm={6} md={4}>
-  //           <Card
-  //             sx={{
-  //               height: "100%",
-  //               display: "flex",
-  //               flexDirection: "column",
-  //             }}
-  //           >
-  //             <CardMedia
-  //               component="img"
-  //               sx={{
-  //                 // 16:9
-  //                 pt: "56.25%",
-  //               }}
-  //               image={result.image}
-  //               alt="random"
-  //             />
-  //             <CardContent sx={{ flexGrow: 1 }}>
-  //             </CardContent>
-  //             <CardActions>
-  //
-  //             </CardActions>
-  //           </Card>
-  //         </Grid>
-  //       ))}
-  //     </Grid>
-  //   );
-  // };
-
   if (results) {
     return results.map(({ id, image, name, species, status }) => {
       return (
@@ -57,7 +15,6 @@ const Characters = ({ results }) => {
               alt={name}
             />
             <CardContent sx={{ flexGrow: 1 }}></CardContent>
-
             <Typography variant="body1" gutterBottom color="textSecondary">
               {name}
             </Typography>

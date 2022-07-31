@@ -2,34 +2,30 @@ import React, { useState } from "react";
 import Nav from "./components/nav-component/Nav";
 import Body from "./components/body-component/Body";
 import Footer from "./components/footer-component/Footer";
-import { Container } from "@mui/material";
-import Example from "./Example";
+import {
+  createTheme,
+  ThemeProvider,
+  CssBaseline,
+  colors,
+} from "@mui/material/";
+
+const theme = createTheme({
+  palette: {
+    primary: { main: colors.orange[500] },
+  },
+});
 
 function App() {
   const [selectedButton, setSelectedButton] = useState("about");
-  const [logo, setLogo] = useState(false);
-  const [logoText, setLogoText] = useState("");
+  const [logo, setLogo] = useState("LOGO");
 
   return (
-    <Example
-      setSelectedButton={setSelectedButton}
-      logo={logo}
-      logoText={logoText}
-    ></Example>
-    // <Container maxWidth="lg">
-    //   <Nav
-    //     setSelectedButton={setSelectedButton}
-    //     logo={logo}
-    //     logoText={logoText}
-    //   />
-    //   <Body
-    //     selectedButton={selectedButton}
-    //     logo={logo}
-    //     setLogo={setLogo}
-    //     setLogoText={setLogoText}
-    //   />
-    //   <Footer />
-    // </Container>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Nav setSelectedButton={setSelectedButton} logo={logo} />
+      <Body selectedButton={selectedButton} logo={logo} setLogo={setLogo} />
+      <Footer />
+    </ThemeProvider>
   );
 }
 
