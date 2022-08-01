@@ -17,18 +17,14 @@ const Character = () => {
   }, [api]);
 
   return (
-    <Container>
-      <Grid container>
-        <Characters results={results} />
-      </Grid>
-      <Grid container>
-        <CharactersPagination
-          info={info}
-          pageNumber={pageNumber}
-          setPageNumber={setPageNumber}
-        />
-      </Grid>
-    </Container>
+    <Grid container>
+      <Characters results={results} />
+      <CharactersPagination
+        info={info}
+        pageNumber={pageNumber}
+        setPageNumber={setPageNumber}
+      />
+    </Grid>
   );
 };
 

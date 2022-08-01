@@ -5,7 +5,14 @@ const CharactersPagination = ({ info, setPageNumber }) => {
     setPageNumber(page);
   };
   return (
-    <Grid item>
+    <Grid
+      style={{
+        borderRadius: "15px",
+        margin: "1px",
+        padding: "15px",
+        backgroundColor: "tomato",
+      }}
+    >
       <Pagination
         count={info?.pages}
         color="primary"

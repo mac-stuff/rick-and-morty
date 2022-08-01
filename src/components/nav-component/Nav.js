@@ -5,7 +5,7 @@ const Nav = ({ setSelectedButton, logo }) => {
   const buttons = ["about", "characters", "todo", "contact"];
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ borderRadius: "15px" }}>
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
           {logo}

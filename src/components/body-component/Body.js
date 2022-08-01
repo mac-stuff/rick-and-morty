@@ -8,60 +8,24 @@ const Body = ({ selectedButton, logo, setLogo }) => {
   return (
     <Container>
       {(selectedButton === "about" || selectedButton.text === "about") && (
-        <Box
-          sx={{
-            bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
-          }}
-        >
-          <Container sx={{ py: 8 }} maxWidth="md">
-            <Grid container spacing={2}>
-              <About logo={logo} setLogo={setLogo} />
-            </Grid>
-          </Container>
-        </Box>
+        <About logo={logo} setLogo={setLogo} />
       )}
       {selectedButton.text === "characters" && (
-        <Box
-          sx={{
-            bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
-          }}
-        >
-          <Container sx={{ py: 8 }} maxWidth="md">
-            <Character />
-          </Container>
-        </Box>
+        <Container sx={{ py: 5 }} maxWidth="md">
+          <Character />
+        </Container>
       )}
       {selectedButton.text === "todo" && (
-        <Box
-          sx={{
-            bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
-          }}
-        >
-          <Container sx={{ py: 8 }} maxWidth="md">
-            <ToDo setLogo={setLogo} logo={logo} />
-          </Container>
-        </Box>
+        <Container sx={{ py: 1 }} maxWidth="md">
+          <ToDo setLogo={setLogo} logo={logo} />
+        </Container>
       )}
       {selectedButton.text === "contact" && (
-        <Box
-          sx={{
-            bgcolor: "background.paper",
-            pt: 8,
-            pb: 6,
-          }}
-        >
-          <Container sx={{ py: 8 }} maxWidth="md">
-            <Grid container spacing={2}>
-              <Contact />
-            </Grid>
-          </Container>
-        </Box>
+        <Container sx={{ py: 8 }} maxWidth="md">
+          <Grid container spacing={2}>
+            <Contact />
+          </Grid>
+        </Container>
       )}
     </Container>
   );

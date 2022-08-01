@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Stack, TextField, Button } from "@mui/material";
+import { Grid, Stack, TextField, Button } from "@mui/material";
 
 const AboutMeForm = ({ logo, setLogo }) => {
   const [customLogo, setCustomLogo] = useState("");
@@ -22,20 +22,34 @@ const AboutMeForm = ({ logo, setLogo }) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
-      <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-        <TextField
-          id="filled-basic"
-          label="custom logo"
-          variant="filled"
-          value={customLogo}
-          onChange={logoHandler}
-        ></TextField>
-        <Button variant="outlined" color="primary" type="submit" size="medium">
-          send
-        </Button>
-      </Stack>
-    </form>
+    <Grid
+      style={{
+        borderRadius: "15px",
+        margin: "1px",
+        padding: "15px",
+        backgroundColor: "tomato",
+      }}
+    >
+      <form onSubmit={submitHandler}>
+        <Stack direction="row" spacing={2} justifyContent="center">
+          <TextField
+            id="filled-basic"
+            label="custom logo"
+            variant="filled"
+            value={customLogo}
+            onChange={logoHandler}
+          ></TextField>
+          <Button
+            variant="outlined"
+            color="primary"
+            type="submit"
+            size="medium"
+          >
+            send
+          </Button>
+        </Stack>
+      </form>
+    </Grid>
   );
 };
 
