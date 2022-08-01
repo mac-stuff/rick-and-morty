@@ -2,6 +2,7 @@ import About from "./about-component/About";
 import Character from "./character-component/Character";
 import ToDo from "./todo-component/ToDo";
 import Contact from "./contact-component/Contact";
+import Dialogs from "./dialog-component/Dialogs";
 import { Container, Grid } from "@mui/material";
 
 const Body = ({ selectedButton, logo, setLogo }) => {
@@ -24,6 +25,20 @@ const Body = ({ selectedButton, logo, setLogo }) => {
         <Container sx={{ py: 8 }} maxWidth="md">
           <Grid container spacing={2}>
             <Contact />
+          </Grid>
+        </Container>
+      )}
+      {selectedButton.text === "dialog" && (
+        <Container sx={{ py: 8 }} maxWidth="md">
+          <Grid container spacing={2}>
+            <Dialogs />
+          </Grid>
+        </Container>
+      )}
+      {selectedButton.text === "components" && (
+        <Container sx={{ py: 8 }} maxWidth="md">
+          <Grid container spacing={2}>
+            <Dialogs />
           </Grid>
         </Container>
       )}

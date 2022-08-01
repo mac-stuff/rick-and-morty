@@ -2,7 +2,14 @@ import NavButton from "./NavButton";
 import { AppBar, Toolbar, Typography, Stack } from "@mui/material";
 
 const Nav = ({ setSelectedButton, logo }) => {
-  const buttons = ["about", "characters", "todo", "contact"];
+  const buttons = [
+    "about",
+    "characters",
+    "todo",
+    "contact",
+    "dialog",
+    "components",
+  ];
 
   return (
     <AppBar position="static" style={{ borderRadius: "15px" }}>
