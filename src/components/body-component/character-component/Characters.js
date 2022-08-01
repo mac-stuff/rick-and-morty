@@ -10,7 +10,7 @@ const Characters = ({ results }) => {
             borderRadius: "15px",
             margin: "1px",
             padding: "5px",
-            backgroundColor: "tomato",
+            backgroundColor: "#FF0099",
             textAlign: "center",
           }}
         >

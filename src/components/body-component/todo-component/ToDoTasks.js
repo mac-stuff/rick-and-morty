@@ -6,7 +6,7 @@ const ToDoTasks = ({ tasks, onDelete }) => {
     <Grid
       item
       style={{
-        backgroundColor: "yellow",
+        backgroundColor: "#DFFF00",
         borderRadius: "15px",
         margin: "2px",
         padding: "10px",

@@ -29,7 +29,7 @@ const AddTask = ({ onAdd }) => {
       xs={12}
       spacing={15}
       style={{
-        backgroundColor: "yellow",
+        backgroundColor: "#DFFF00",
         borderRadius: "15px",
         margin: "2px",
         padding: "10px",
@@ -47,6 +47,9 @@ const AddTask = ({ onAdd }) => {
             label="add task"
             value={text}
             onChange={(e) => setText(e.target.value)}
+            style={{
+              backgroundColor: "#33FF00",
+            }}
           ></TextField>
           <TextField
             variant="filled"
@@ -58,9 +61,12 @@ const AddTask = ({ onAdd }) => {
               shrink: true,
             }}
             onChange={(e) => setDay(e.target.value)}
+            style={{
+              backgroundColor: "#33FF00",
+            }}
           ></TextField>
           <Button
-            variant="outlined"
+            variant="contained"
             color="primary"
             type="submit"
             size="medium"

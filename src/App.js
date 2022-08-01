@@ -9,12 +9,11 @@ import {
   createTheme,
   ThemeProvider,
   CssBaseline,
-  colors,
 } from "@mui/material/";
 
 const theme = createTheme({
   palette: {
-    primary: { main: colors.orange[500] },
+    primary: { main: "#6E0DD0" },
   },
 });
 
@@ -27,7 +26,7 @@ function App() {
       <Container>
         <Paper
           style={{
-            backgroundColor: "green",
+            backgroundColor: "#33FF00",
             minHeight: "800px",
             padding: "5px",
             borderRadius: "15px",
@@ -42,7 +41,7 @@ function App() {
             xs={12}
             spacing={15}
             style={{
-              backgroundColor: "yellow",
+              backgroundColor: "#DFFF00",
               borderRadius: "15px",
               margin: "2px",
               padding: "2px",
@@ -59,7 +58,7 @@ function App() {
             item
             xs={12}
             spacing={5}
-            style={{ backgroundColor: "blue", borderRadius: "15px" }}
+            style={{ backgroundColor: "#FF6600", borderRadius: "15px" }}
           >
             <Footer />
           </Grid>

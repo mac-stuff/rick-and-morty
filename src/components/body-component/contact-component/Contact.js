@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MessageContent from "./MessageContent";
-import { Container, Button, TextField, Stack } from "@mui/material";
+import { Grid, Button, TextField, Stack } from "@mui/material";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -35,7 +35,19 @@ const Contact = () => {
   };
 
   return (
-    <Container>
+    <Grid
+      item
+      xs={12}
+      spacing={15}
+      style={{
+        backgroundColor: "#FF0099",
+        minHeight: "600px",
+        borderRadius: "15px",
+        margin: "2px",
+        padding: "10px",
+        textAlign: "center",
+      }}
+    >
       <form onSubmit={submitHandler}>
         <Stack
           sx={{ pt: 4 }}
@@ -49,6 +61,7 @@ const Contact = () => {
             variant="filled"
             onChange={emailHandler}
             value={email}
+            style={{ backgroundColor: "#DFFF00" }}
           ></TextField>
           <TextField
             id="filled-basic"
@@ -56,9 +69,10 @@ const Contact = () => {
             variant="filled"
             onChange={messageHandler}
             value={message}
+            style={{ backgroundColor: "#DFFF00" }}
           ></TextField>
           <Button
-            variant="outlined"
+            variant="contained"
             color="primary"
             type="submit"
             size="medium"
@@ -69,7 +83,7 @@ const Contact = () => {
       </form>
 
       {isSent ? <MessageContent data={data} /> : ""}
-    </Container>
+    </Grid>
   );
 };
 

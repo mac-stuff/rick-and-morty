@@ -30,7 +30,7 @@ const ToDo = ({ logo, setLogo }) => {
       xs={12}
       spacing={15}
       style={{
-        backgroundColor: "black",
+        backgroundColor: "#FF0099",
         minHeight: "600px",
         borderRadius: "15px",
         margin: "2px",
@@ -39,9 +39,10 @@ const ToDo = ({ logo, setLogo }) => {
       }}
     >
       <Button
-        variant="outlined"
+        variant="contained"
         onClick={() => setShowAddTask(!showAddTask)}
         size="medium"
+        style={{ margin: "25px" }}
       >
         add task
       </Button>
@@ -52,10 +53,11 @@ const ToDo = ({ logo, setLogo }) => {
         "No Tasks To Show"
       )}
       <Button
-        variant="outlined"
+        variant="contained"
         color="primary"
         onClick={onButtonClick}
         size="medium"
+        style={{ margin: "25px" }}
       >
         change logo
       </Button>

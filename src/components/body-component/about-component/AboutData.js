@@ -1,6 +1,6 @@
 import image from "../assets/image.jpeg";
 import data from "../assets/data.js";
-import { Box, Avatar, Grid, Typography } from "@mui/material";
+import { Avatar, Grid, Typography } from "@mui/material";
 
 const AboutMeData = () => {
   return (
@@ -9,36 +9,37 @@ const AboutMeData = () => {
       position="static"
       style={{
         borderRadius: "15px",
-        margin: "1px",
+        marginBottom: "2px",
         padding: "1px",
-        backgroundColor: "tomato",
+        backgroundColor: "#DFFF00",
       }}
     >
       <Grid
         item
         xs={12}
         style={{
-          backgroundColor: "pink",
+          backgroundColor: "#FF0099",
           borderRadius: "15px",
           padding: "5px",
+          margin: "2px",
           justifyItems: "center",
         }}
       >
         <Avatar
           alt={data.name}
           src={image}
-          sx={{ width: 450, height: 450 }}
-          style={{ margin: "auto" }}
+          sx={{ width: 350, height: 350 }}
+          style={{ margin: "2% auto" }}
         />
       </Grid>
       <Grid
         item
         xs={12}
         style={{
-          backgroundColor: "pink",
+          backgroundColor: "#FF0099",
           borderRadius: "15px",
           padding: "5px",
-          margin: "1px",
+          margin: "2px",
           justifyItems: "center",
         }}
       >
@@ -48,6 +49,7 @@ const AboutMeData = () => {
           align="center"
           color="text.primary"
           gutterBottom
+          style={{ padding: "5% 5% 2% 5%" }}
         >
           {data.name}
         </Typography>
@@ -56,6 +58,7 @@ const AboutMeData = () => {
           align="center"
           color="text.secondary"
           paragraph
+          style={{ padding: "0% 5% 5% 5%" }}
         >
           {data.cv}
         </Typography>

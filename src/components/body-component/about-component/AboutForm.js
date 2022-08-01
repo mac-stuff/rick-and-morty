@@ -38,9 +38,10 @@ const AboutMeForm = ({ logo, setLogo }) => {
             variant="filled"
             value={customLogo}
             onChange={logoHandler}
+            style={{ backgroundColor: "#DFFF00" }}
           ></TextField>
           <Button
-            variant="outlined"
+            variant="contained"
             color="primary"
             type="submit"
             size="medium"

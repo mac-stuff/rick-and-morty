@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Characters from "./Characters";
 import CharactersPagination from "./CharactersPagination";
-import { Container, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 
 const Character = () => {
   const [pageNumber, setPageNumber] = useState(1);

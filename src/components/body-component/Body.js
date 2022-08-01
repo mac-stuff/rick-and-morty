@@ -2,7 +2,7 @@ import About from "./about-component/About";
 import Character from "./character-component/Character";
 import ToDo from "./todo-component/ToDo";
 import Contact from "./contact-component/Contact";
-import { Container, Box, Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 const Body = ({ selectedButton, logo, setLogo }) => {
   return (
