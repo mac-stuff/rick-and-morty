@@ -1,37 +1,93 @@
 import React, { useState } from "react";
-import "./App.css";
-import Navigation from "./components/nav-components/Navigation";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
+import Nav from "./components/nav-component/Nav";
+import Body from "./components/body-component/Body";
+import Footer from "./components/footer-component/Footer";
+import {
+  Container,
+  Grid,
+  Paper,
+  createTheme,
+  ThemeProvider,
+  CssBaseline,
+} from "@mui/material/";
+
+const theme = createTheme({
+  palette: {
+    primary: { main: "#6E0DD0" },
+    secondary: { main: "#E6FB04" },
+  },
+  components: {
+    MuiSwitch: {
+      styleOverrides: {
+        switchBase: {
+          color: "#FF0099",
+        },
+        colorPrimary: {
+          "&.Mui-checked": {
+            color: "#E6FB04",
+          },
+        },
+        track: {
+          opacity: 0.2,
+          backgroundColor: "#6E0DD0",
+          ".Mui-checked.Mui-checked + &": {
+            opacity: 0.7,
+            backgroundColor: "#6E0DD0",
+          },
+        },
+      },
+    },
+  },
+});
 
 function App() {
-  const [selectedButton, setSelectedButton] = useState("about me");
-  const [logo, setLogo] = useState(false);
-  const [logoText, setLogoText] = useState("");
+  const [selectedButton, setSelectedButton] = useState("about");
+  const [logo, setLogo] = useState("LOGO");
 
   return (
-    <div className="wrapper">
-      <div className="header">
-        <Navigation
-          setSelectedButton={setSelectedButton}
-          logo={logo}
-          logoText={logoText}
-        />
-      </div>
-      <div className="main">
-        <Body
-          selectedButton={selectedButton}
-          logo={logo}
-          setLogo={setLogo}
-          setLogoText={setLogoText}
-        />
-      </div>
-      <div className="aside aside1"></div>
-      <div className="aside aside2"></div>
-      <div className="footer">
-        <Footer />
-      </div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Paper
+          style={{
+            backgroundColor: "#33FF00",
+            minHeight: "800px",
+            padding: "5px",
+            borderRadius: "15px",
+          }}
+        >
+          <Grid item xs={12}>
+            <CssBaseline />
+            <Nav setSelectedButton={setSelectedButton} logo={logo} />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            spacing={15}
+            style={{
+              backgroundColor: "#DFFF00",
+              borderRadius: "15px",
+              margin: "2px",
+              padding: "2px",
+              minHeight: "900px",
+            }}
+          >
+            <Body
+              selectedButton={selectedButton}
+              logo={logo}
+              setLogo={setLogo}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            spacing={5}
+            style={{ backgroundColor: "#9900FF", borderRadius: "15px" }}
+          >
+            <Footer />
+          </Grid>
+        </Paper>
+      </Container>
+    </ThemeProvider>
   );
 }
 
