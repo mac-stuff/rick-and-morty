@@ -17,6 +17,7 @@ import DialogWindow from "./DialogWindow";
 
 const Dialogs = () => {
   const [open, setOpen] = useState(false);
+  const [isSent, setIsSent] = useState(false);
   const [stack, setStack] = useState("");
   const [level, setLevel] = useState("");
 
@@ -28,8 +29,14 @@ const Dialogs = () => {
     setLevel(event.target.value);
   };
 
+  const handleIsSent = () => {
+    setIsSent(true);
+    setOpen(false);
+  };
+
   const handleOpen = () => {
     setOpen(true);
+    setIsSent(false);
   };
 
   const handleClose = () => {
@@ -89,10 +96,10 @@ const Dialogs = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Ok</Button>
+          <Button onClick={handleIsSent}>Ok</Button>
         </DialogActions>
       </Dialog>
-      {open ? "" : <DialogWindow stack={stack} level={level} />}
+      {isSent ? <DialogWindow stack={stack} level={level} /> : ""}
     </Grid>
   );
 };

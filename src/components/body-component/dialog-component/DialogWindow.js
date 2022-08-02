@@ -10,7 +10,7 @@ const DialogWindow = ({ stack, level }) => {
         backgroundColor: "#33FF00",
         borderRadius: "15px",
         margin: "20px",
-        padding: "2px",
+        padding: "50px",
         minHeight: "500px",
       }}
     >
@@ -21,7 +21,7 @@ const DialogWindow = ({ stack, level }) => {
         color="text.primary"
         gutterBottom
       >
-        {stack} - {level}
+        {stack} {level}
       </Typography>
     </Grid>
   );

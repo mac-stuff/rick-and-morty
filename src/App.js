@@ -14,6 +14,29 @@ import {
 const theme = createTheme({
   palette: {
     primary: { main: "#6E0DD0" },
+    secondary: { main: "#E6FB04" },
+  },
+  components: {
+    MuiSwitch: {
+      styleOverrides: {
+        switchBase: {
+          color: "#FF0099",
+        },
+        colorPrimary: {
+          "&.Mui-checked": {
+            color: "#E6FB04",
+          },
+        },
+        track: {
+          opacity: 0.2,
+          backgroundColor: "#6E0DD0",
+          ".Mui-checked.Mui-checked + &": {
+            opacity: 0.7,
+            backgroundColor: "#6E0DD0",
+          },
+        },
+      },
+    },
   },
 });
 
@@ -58,7 +81,7 @@ function App() {
             item
             xs={12}
             spacing={5}
-            style={{ backgroundColor: "#FF6600", borderRadius: "15px" }}
+            style={{ backgroundColor: "#9900FF", borderRadius: "15px" }}
           >
             <Footer />
           </Grid>

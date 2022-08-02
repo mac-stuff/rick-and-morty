@@ -4,6 +4,7 @@ import ToDo from "./todo-component/ToDo";
 import Contact from "./contact-component/Contact";
 import Dialogs from "./dialog-component/Dialogs";
 import { Container, Grid } from "@mui/material";
+import Components from "./components-component/Components";
 
 const Body = ({ selectedButton, logo, setLogo }) => {
   return (
@@ -38,7 +39,7 @@ const Body = ({ selectedButton, logo, setLogo }) => {
       {selectedButton.text === "components" && (
         <Container sx={{ py: 8 }} maxWidth="md">
           <Grid container spacing={2}>
-            <Dialogs />
+            <Components />
           </Grid>
         </Container>
       )}
