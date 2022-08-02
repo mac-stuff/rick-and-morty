@@ -5,7 +5,11 @@ const Components = () => {
   const [text, setText] = useState("Dark");
 
   const handelChange = () => {
-    setText("Light");
+    if (text === "Dark") {
+      setText("Light");
+    } else {
+      setText("Dark");
+    }
   };
 
   const mark = [
