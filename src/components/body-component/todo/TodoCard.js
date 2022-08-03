@@ -5,7 +5,7 @@ const ToDoTasks = ({ tasks, onDelete }) => {
   return (
     <Grid
       item
-      style={{
+      sx={{
         backgroundColor: "#DFFF00",
         borderRadius: "15px",
         margin: "2px",
@@ -14,8 +14,9 @@ const ToDoTasks = ({ tasks, onDelete }) => {
     >
       {tasks.map((task) => (
         <Card
-          sx={{ minWidth: 200, flexDirection: "column" }}
-          style={{
+          sx={{
+            minWidth: 200,
+            flexDirection: "column",
             borderRadius: "15px",
             margin: "10px",
             padding: "5px",
@@ -32,7 +33,7 @@ const ToDoTasks = ({ tasks, onDelete }) => {
           <Typography>
             <FaTimes
               className="fa"
-              style={{ color: "red", cursor: "pointer" }}
+              sx={{ color: "red", cursor: "pointer" }}
               onClick={() => onDelete(task.id)}
             />
           </Typography>

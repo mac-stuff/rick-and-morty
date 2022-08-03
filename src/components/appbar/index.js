@@ -12,7 +12,7 @@ const Appbar = ({ setSelectedButton, logo }) => {
   ];
 
   return (
-    <AppBar position="static" style={{ borderRadius: "15px" }}>
+    <AppBar position="static" sx={{ borderRadius: "15px" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>

@@ -6,7 +6,7 @@ const MessageContent = ({ data }) => {
       item
       xs={12}
       spacing={15}
-      style={{
+      sx={{
         backgroundColor: "#33FF00",
         borderRadius: "15px",
         margin: "20px",

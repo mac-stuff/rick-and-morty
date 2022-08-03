@@ -5,8 +5,9 @@ const Character = ({ results }) => {
     return results.map(({ id, image, name, species, status }) => {
       return (
         <Card
-          sx={{ maxWidth: 200, flexDirection: "column" }}
-          style={{
+          sx={{
+            maxWidth: 200,
+            flexDirection: "column",
             borderRadius: "15px",
             margin: "1px",
             padding: "5px",
@@ -18,8 +19,8 @@ const Character = ({ results }) => {
             component="img"
             sx={{
               pt: "5%",
+              borderRadius: "50px",
             }}
-            style={{ borderRadius: "50px" }}
             image={image}
             alt={name}
           />
@@ -27,7 +28,7 @@ const Character = ({ results }) => {
             variant="body1"
             gutterBottom
             color="textSecondary"
-            style={{ align: "center" }}
+            sx={{ align: "center" }}
           >
             {name}
           </Typography>
@@ -35,7 +36,7 @@ const Character = ({ results }) => {
             variant="body1"
             gutterBottom
             color="textSecondary"
-            style={{ margin: "auto" }}
+            sx={{ margin: "auto" }}
           >
             {species} - {status}
           </Typography>
