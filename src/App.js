@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Appbar from "./components/appbar/index.js";
-import Body from "./components/body-component/Body";
+import Body from "./components/body/Body";
 import Footer from "./components/footer/index.js";
 import {
   Container,

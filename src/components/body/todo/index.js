@@ -20,7 +20,7 @@ const Todo = ({ logo, setLogo }) => {
 
   const onButtonClick = () => {
     {
-      logo.startsWith("LOGO") ? setLogo("NOWE LOGO") : setLogo("LOGO");
+      logo.startsWith("NOWE") ? setLogo("LOGO") : setLogo("NOWE LOGO");
     }
   };
 
