@@ -6,7 +6,7 @@ const CharactersPagination = ({ info, setPageNumber }) => {
   };
   return (
     <Grid
-      style={{
+      sx={{
         borderRadius: "15px",
         margin: "1px",
         padding: "15px",

@@ -18,7 +18,7 @@ const theme = createTheme({
   },
   components: {
     MuiSwitch: {
-      styleOverrides: {
+      sxOverrides: {
         switchBase: {
           color: "#FF0099",
         },
@@ -48,7 +48,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container>
         <Paper
-          style={{
+          sx={{
             backgroundColor: "#33FF00",
             minHeight: "800px",
             padding: "5px",
@@ -63,7 +63,7 @@ function App() {
             item
             xs={12}
             spacing={15}
-            style={{
+            sx={{
               backgroundColor: "#DFFF00",
               borderRadius: "15px",
               margin: "2px",
@@ -81,7 +81,7 @@ function App() {
             item
             xs={12}
             spacing={5}
-            style={{ backgroundColor: "#9900FF", borderRadius: "15px" }}
+            sx={{ backgroundColor: "#9900FF", borderRadius: "15px" }}
           >
             <Footer />
           </Grid>

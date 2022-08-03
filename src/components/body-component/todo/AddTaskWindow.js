@@ -28,7 +28,7 @@ const AddTask = ({ onAdd }) => {
       item
       xs={12}
       spacing={15}
-      style={{
+      sx={{
         backgroundColor: "#DFFF00",
         borderRadius: "15px",
         margin: "2px",
@@ -47,7 +47,7 @@ const AddTask = ({ onAdd }) => {
             label="add task"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            style={{
+            sx={{
               backgroundColor: "#33FF00",
             }}
           ></TextField>
@@ -61,7 +61,7 @@ const AddTask = ({ onAdd }) => {
               shrink: true,
             }}
             onChange={(e) => setDay(e.target.value)}
-            style={{
+            sx={{
               backgroundColor: "#33FF00",
             }}
           ></TextField>

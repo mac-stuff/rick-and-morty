@@ -19,7 +19,7 @@ const Components = () => {
       item
       xs={12}
       spacing={15}
-      style={{
+      sx={{
         backgroundColor: "#FF0099",
         minHeight: "600px",
         borderRadius: "15px",
@@ -32,7 +32,7 @@ const Components = () => {
         item
         xs={12}
         spacing={15}
-        style={{
+        sx={{
           backgroundColor: "#33FF00",
           borderRadius: "15px",
           margin: "20px",
@@ -40,15 +40,15 @@ const Components = () => {
           minHeight: "100px",
         }}
       >
-        <Button variant="text" style={{ margin: "10px" }}>
+        <Button variant="text" sx={{ margin: "10px" }}>
           Text
         </Button>
-        <Button variant="contained" style={{ margin: "10px" }}>
+        <Button variant="contained" sx={{ margin: "10px" }}>
           Contained
         </Button>
         <Button
           variant="outlined"
-          style={{ backgroundColor: "#E6FB04", opacity: 0.9, margin: "10px" }}
+          sx={{ backgroundColor: "#E6FB04", opacity: 0.9, margin: "10px" }}
         >
           Outlined
         </Button>
@@ -57,7 +57,7 @@ const Components = () => {
         item
         xs={12}
         spacing={15}
-        style={{
+        sx={{
           backgroundColor: "#33FF00",
           borderRadius: "15px",
           margin: "20px",
@@ -79,7 +79,7 @@ const Components = () => {
         item
         xs={12}
         spacing={15}
-        style={{
+        sx={{
           backgroundColor: "#33FF00",
           borderRadius: "15px",
           margin: "20px",

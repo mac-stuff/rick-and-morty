@@ -39,7 +39,7 @@ const Contact = () => {
       item
       xs={12}
       spacing={15}
-      style={{
+      sx={{
         backgroundColor: "#FF0099",
         minHeight: "600px",
         borderRadius: "15px",
@@ -61,7 +61,7 @@ const Contact = () => {
             variant="filled"
             onChange={emailHandler}
             value={email}
-            style={{ backgroundColor: "#DFFF00" }}
+            sx={{ backgroundColor: "#DFFF00" }}
           ></TextField>
           <TextField
             id="filled-basic"
@@ -69,7 +69,7 @@ const Contact = () => {
             variant="filled"
             onChange={messageHandler}
             value={message}
-            style={{ backgroundColor: "#DFFF00" }}
+            sx={{ backgroundColor: "#DFFF00" }}
           ></TextField>
           <Button
             variant="contained"

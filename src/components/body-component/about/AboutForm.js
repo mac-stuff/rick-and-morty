@@ -23,7 +23,7 @@ const AboutMeForm = ({ logo, setLogo }) => {
 
   return (
     <Grid
-      style={{
+      sx={{
         borderRadius: "15px",
         margin: "1px",
         padding: "15px",
@@ -38,7 +38,7 @@ const AboutMeForm = ({ logo, setLogo }) => {
             variant="filled"
             value={customLogo}
             onChange={logoHandler}
-            style={{ backgroundColor: "#DFFF00" }}
+            sx={{ backgroundColor: "#DFFF00" }}
           ></TextField>
           <Button
             variant="contained"

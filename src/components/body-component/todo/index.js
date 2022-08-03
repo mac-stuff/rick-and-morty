@@ -29,7 +29,7 @@ const Todo = ({ logo, setLogo }) => {
       item
       xs={12}
       spacing={15}
-      style={{
+      sx={{
         backgroundColor: "#FF0099",
         minHeight: "600px",
         borderRadius: "15px",
@@ -42,7 +42,7 @@ const Todo = ({ logo, setLogo }) => {
         variant="contained"
         onClick={() => setShowAddTask(!showAddTask)}
         size="medium"
-        style={{ margin: "25px" }}
+        sx={{ margin: "25px" }}
       >
         add task
       </Button>
@@ -57,7 +57,7 @@ const Todo = ({ logo, setLogo }) => {
         color="primary"
         onClick={onButtonClick}
         size="medium"
-        style={{ margin: "25px" }}
+        sx={{ margin: "25px" }}
       >
         change logo
       </Button>

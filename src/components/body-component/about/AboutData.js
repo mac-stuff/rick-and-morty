@@ -7,7 +7,7 @@ const AboutMeData = () => {
     <Grid
       container
       position="static"
-      style={{
+      sx={{
         borderRadius: "15px",
         marginBottom: "2px",
         padding: "10px",
@@ -18,7 +18,7 @@ const AboutMeData = () => {
       <Grid
         item
         xs={12}
-        style={{
+        sx={{
           backgroundColor: "#FF0099",
           borderRadius: "15px",
           padding: "5px",
@@ -31,8 +31,9 @@ const AboutMeData = () => {
           sx={{
             maxWidth: 350,
             borderRadius: "50%",
+            margin: "2% auto",
+            borderRadius: "50%",
           }}
-          style={{ margin: "2% auto", borderRadius: "50%" }}
           image={image}
           alt={data.name}
         />
@@ -40,7 +41,7 @@ const AboutMeData = () => {
       <Grid
         item
         xs={12}
-        style={{
+        sx={{
           backgroundColor: "#FF0099",
           borderRadius: "15px",
           padding: "5px",
@@ -54,7 +55,7 @@ const AboutMeData = () => {
           align="center"
           color="text.primary"
           gutterBottom
-          style={{ padding: "5% 5% 2% 5%" }}
+          sx={{ padding: "5% 5% 2% 5%" }}
         >
           {data.name}
         </Typography>
@@ -63,7 +64,7 @@ const AboutMeData = () => {
           align="center"
           color="text.secondary"
           paragraph
-          style={{ padding: "0% 5% 5% 5%" }}
+          sx={{ padding: "0% 5% 5% 5%" }}
         >
           {data.cv}
         </Typography>

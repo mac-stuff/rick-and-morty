@@ -48,7 +48,7 @@ const Dialogs = () => {
       item
       xs={12}
       spacing={15}
-      style={{
+      sx={{
         backgroundColor: "#FF0099",
         minHeight: "600px",
         borderRadius: "15px",
