@@ -1,5 +1,12 @@
 import AppbarButton from "./AppbarButton";
-import { AppBar, Container, Toolbar, Typography, Stack } from "@mui/material";
+import {
+  AppBar,
+  Container,
+  Toolbar,
+  Typography,
+  Stack,
+  Grid,
+} from "@mui/material";
 
 const Appbar = ({ setSelectedButton, logo }) => {
   const buttons = [
@@ -19,13 +26,15 @@ const Appbar = ({ setSelectedButton, logo }) => {
             {logo}
           </Typography>
           <Stack direction="row" spacing={2} sx={{ flexGrow: 1 }}>
-            {buttons.map((button) => (
-              <AppbarButton
-                key={button}
-                text={button}
-                setSelectedButton={setSelectedButton}
-              />
-            ))}
+            <Grid spacing={{ xs: 3, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+              {buttons.map((button) => (
+                <AppbarButton
+                  key={button}
+                  text={button}
+                  setSelectedButton={setSelectedButton}
+                />
+              ))}
+            </Grid>
           </Stack>
         </Toolbar>
       </Container>

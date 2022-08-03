@@ -6,7 +6,7 @@ const AppbarButton = ({ text, setSelectedButton }) => {
   };
 
   return (
-    <Button color="inherit" onClick={() => onButtonClick({ text })}>
+    <Button color="inherit" onClick={() => onButtonClick({ text })} xs={1}>
       {text}
     </Button>
   );

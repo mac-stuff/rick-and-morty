@@ -15,6 +15,8 @@ const Footer = () => {
             padding: "5px",
             paddingLeft: "20px",
             minHeight: "40px",
+            fontSize: "1.2rem",
+            color: "#33FF00",
           }}
         >
           Made By Marika

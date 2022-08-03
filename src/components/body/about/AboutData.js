@@ -54,7 +54,7 @@ const AboutData = () => {
           align="center"
           color="text.primary"
           gutterBottom
-          sx={{ padding: "5% 5% 2% 5%" }}
+          sx={{ padding: "5% 5% 2% 5%", fontSize: "2rem", color: "#33FF00" }}
         >
           {data.name}
         </Typography>
