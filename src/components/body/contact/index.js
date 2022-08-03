@@ -50,10 +50,10 @@ const Contact = () => {
     >
       <form onSubmit={submitHandler}>
         <Stack
-          sx={{ pt: 4 }}
           direction="row"
           spacing={2}
           justifyContent="center"
+          sx={{ pt: 4 }}
         >
           <TextField
             id="filled-basic"

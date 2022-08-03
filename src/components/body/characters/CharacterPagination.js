@@ -1,9 +1,10 @@
 import { Grid, Pagination } from "@mui/material";
 
-const CharactersPagination = ({ info, setPageNumber }) => {
+const CharacterPagination = ({ info, setPageNumber }) => {
   const onChangeHandler = (event, page) => {
     setPageNumber(page);
   };
+
   return (
     <Grid
       sx={{
@@ -22,4 +23,4 @@ const CharactersPagination = ({ info, setPageNumber }) => {
   );
 };
 
-export default CharactersPagination;
+export default CharacterPagination;

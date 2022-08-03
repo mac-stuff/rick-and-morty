@@ -1,6 +1,6 @@
 import { Card, Typography, CardMedia } from "@mui/material";
 
-const Character = ({ results }) => {
+const CharacterCard = ({ results }) => {
   if (results) {
     return results.map(({ id, image, name, species, status }) => {
       return (
@@ -44,8 +44,17 @@ const Character = ({ results }) => {
       );
     });
   } else {
-    return <Typography>Not found</Typography>;
+    return (
+      <Typography
+        variant="body1"
+        gutterBottom
+        color="textSecondary"
+        sx={{ margin: "auto" }}
+      >
+        Not found
+      </Typography>
+    );
   }
 };
 
-export default Character;
+export default CharacterCard;

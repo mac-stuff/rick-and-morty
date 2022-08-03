@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Grid, Stack, TextField, Button } from "@mui/material";
 
-const AddTask = ({ onAdd }) => {
+const AddTaskWindow = ({ onAdd }) => {
   const [text, setText] = useState("");
   const [day, setDay] = useState("");
 
@@ -37,10 +37,10 @@ const AddTask = ({ onAdd }) => {
     >
       <form onSubmit={onSubmit}>
         <Stack
-          sx={{ pt: 4 }}
           direction="row"
           spacing={2}
           justifyContent="center"
+          sx={{ pt: 4 }}
         >
           <TextField
             variant="filled"
@@ -56,11 +56,11 @@ const AddTask = ({ onAdd }) => {
             label="add a date"
             type="date"
             defaultValue="2022-07-13"
+            onChange={(e) => setDay(e.target.value)}
             sx={{ width: 220, backgroundColor: "#33FF00" }}
             InputLabelProps={{
               shrink: true,
             }}
-            onChange={(e) => setDay(e.target.value)}
           ></TextField>
           <Button
             variant="contained"
@@ -76,4 +76,4 @@ const AddTask = ({ onAdd }) => {
   );
 };
 
-export default AddTask;
+export default AddTaskWindow;

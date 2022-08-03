@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Grid, Stack, TextField, Button } from "@mui/material";
 
-const AboutMeForm = ({ logo, setLogo }) => {
+const AboutForm = ({ logo, setLogo }) => {
   const [customLogo, setCustomLogo] = useState("");
 
   const logoHandler = (event) => {
@@ -54,4 +54,4 @@ const AboutMeForm = ({ logo, setLogo }) => {
   );
 };
 
-export default AboutMeForm;
+export default AboutForm;
