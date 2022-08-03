@@ -18,7 +18,7 @@ const theme = createTheme({
   },
   components: {
     MuiSwitch: {
-      sxOverrides: {
+      styleOverrides: {
         switchBase: {
           color: "#FF0099",
         },
