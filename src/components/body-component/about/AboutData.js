@@ -1,6 +1,6 @@
 import image from "../assets/image.jpeg";
 import data from "../assets/data.js";
-import { Avatar, Grid, Typography } from "@mui/material";
+import { CardMedia, Grid, Typography } from "@mui/material";
 
 const AboutMeData = () => {
   return (
@@ -10,7 +10,8 @@ const AboutMeData = () => {
       style={{
         borderRadius: "15px",
         marginBottom: "2px",
-        padding: "1px",
+        padding: "10px",
+        margin: "2px",
         backgroundColor: "#DFFF00",
       }}
     >
@@ -25,11 +26,15 @@ const AboutMeData = () => {
           justifyItems: "center",
         }}
       >
-        <Avatar
+        <CardMedia
+          component="img"
+          sx={{
+            maxWidth: 350,
+            borderRadius: "50%",
+          }}
+          style={{ margin: "2% auto", borderRadius: "50%" }}
+          image={image}
           alt={data.name}
-          src={image}
-          sx={{ width: 350, height: 350 }}
-          style={{ margin: "2% auto" }}
         />
       </Grid>
       <Grid

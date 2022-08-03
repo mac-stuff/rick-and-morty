@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Characters from "./Characters";
+import CharacterCard from "./CharacterCard";
 import CharactersPagination from "./CharactersPagination";
 import { Grid } from "@mui/material";
 
-const Character = () => {
+const Characters = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [fetchedData, setFetchedData] = useState([]);
   const { info, results } = fetchedData;
@@ -18,7 +18,7 @@ const Character = () => {
 
   return (
     <Grid container>
-      <Characters results={results} />
+      <CharacterCard results={results} />
       <CharactersPagination
         info={info}
         pageNumber={pageNumber}
@@ -28,4 +28,4 @@ const Character = () => {
   );
 };
 
-export default Character;
+export default Characters;

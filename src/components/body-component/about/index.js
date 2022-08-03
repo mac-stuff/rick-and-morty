@@ -2,7 +2,7 @@ import AboutData from "./AboutData";
 import AboutForm from "./AboutForm";
 import { Container } from "@mui/material";
 
-const AboutMe = ({ logo, setLogo }) => {
+const About = ({ logo, setLogo }) => {
   return (
     <Container>
       <AboutData />
@@ -10,4 +10,4 @@ const AboutMe = ({ logo, setLogo }) => {
     </Container>
   );
 };
-export default AboutMe;
+export default About;

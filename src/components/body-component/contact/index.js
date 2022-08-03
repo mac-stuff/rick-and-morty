@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MessageContent from "./MessageContent";
+import ContactWindow from "./ContactWindow";
 import { Grid, Button, TextField, Stack } from "@mui/material";
 
 const Contact = () => {
@@ -82,7 +82,7 @@ const Contact = () => {
         </Stack>
       </form>
 
-      {isSent ? <MessageContent data={data} /> : ""}
+      {isSent ? <ContactWindow data={data} /> : ""}
     </Grid>
   );
 };
