@@ -1,7 +1,7 @@
 import { Grid, Card, Typography } from "@mui/material";
 import { FaTimes } from "react-icons/fa";
 
-const ToDoTasks = ({ tasks, onDelete }) => {
+const TodoCard = ({ tasks, onDelete }) => {
   return (
     <Grid
       item
@@ -33,8 +33,8 @@ const ToDoTasks = ({ tasks, onDelete }) => {
           <Typography>
             <FaTimes
               className="fa"
-              sx={{ color: "red", cursor: "pointer" }}
               onClick={() => onDelete(task.id)}
+              sx={{ color: "red", cursor: "pointer" }}
             />
           </Typography>
         </Card>
@@ -43,4 +43,4 @@ const ToDoTasks = ({ tasks, onDelete }) => {
   );
 };
 
-export default ToDoTasks;
+export default TodoCard;

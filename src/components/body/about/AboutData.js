@@ -2,7 +2,7 @@ import image from "../assets/image.jpeg";
 import data from "../assets/data.js";
 import { CardMedia, Grid, Typography } from "@mui/material";
 
-const AboutMeData = () => {
+const AboutData = () => {
   return (
     <Grid
       container
@@ -28,13 +28,13 @@ const AboutMeData = () => {
       >
         <CardMedia
           component="img"
+          image={image}
+          alt={data.name}
           sx={{
             maxWidth: 350,
             borderRadius: "50%",
             margin: "2% auto",
           }}
-          image={image}
-          alt={data.name}
         />
       </Grid>
       <Grid
@@ -72,4 +72,4 @@ const AboutMeData = () => {
   );
 };
 
-export default AboutMeData;
+export default AboutData;

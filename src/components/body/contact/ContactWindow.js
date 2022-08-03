@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 
-const MessageContent = ({ data }) => {
+const ContactWindow = ({ data }) => {
   return (
     <Grid
       item
@@ -27,4 +27,4 @@ const MessageContent = ({ data }) => {
   );
 };
 
-export default MessageContent;
+export default ContactWindow;
