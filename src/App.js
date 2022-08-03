@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Nav from "./components/nav-component/Nav";
+import Appbar from "./components/appbar/index.js";
 import Body from "./components/body-component/Body";
-import Footer from "./components/footer-component/Footer";
+import Footer from "./components/footer/index.js";
 import {
   Container,
   Grid,
@@ -57,7 +57,7 @@ function App() {
         >
           <Grid item xs={12}>
             <CssBaseline />
-            <Nav setSelectedButton={setSelectedButton} logo={logo} />
+            <Appbar setSelectedButton={setSelectedButton} logo={logo} />
           </Grid>
           <Grid
             item

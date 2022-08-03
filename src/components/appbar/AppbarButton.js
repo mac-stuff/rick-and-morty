@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 
-const NavButton = ({ text, setSelectedButton }) => {
+const AppbarButton = ({ text, setSelectedButton }) => {
   const onButtonClick = (mode) => {
     setSelectedButton(mode);
   };
@@ -12,4 +12,4 @@ const NavButton = ({ text, setSelectedButton }) => {
   );
 };
 
-export default NavButton;
+export default AppbarButton;

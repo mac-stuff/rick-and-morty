@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import data from "../assets/data";
-import ToDoTasks from "./ToDoTasks";
-import AddTask from "./AddTask";
+import TodoCard from "./TodoCard";
+import AddTaskWindow from "./AddTaskWindow";
 import { Button, Grid } from "@mui/material";
 
-const ToDo = ({ logo, setLogo }) => {
+const Todo = ({ logo, setLogo }) => {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState(data.todo);
 
@@ -46,9 +46,9 @@ const ToDo = ({ logo, setLogo }) => {
       >
         add task
       </Button>
-      {showAddTask && <AddTask onAdd={addTask} />}
+      {showAddTask && <AddTaskWindow onAdd={addTask} />}
       {tasks.length > 0 ? (
-        <ToDoTasks tasks={tasks} onDelete={deleteTask} />
+        <TodoCard tasks={tasks} onDelete={deleteTask} />
       ) : (
         "No Tasks To Show"
       )}
@@ -65,4 +65,4 @@ const ToDo = ({ logo, setLogo }) => {
   );
 };
 
-export default ToDo;
+export default Todo;

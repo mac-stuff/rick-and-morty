@@ -1,6 +1,6 @@
 import { Card, Typography, CardMedia } from "@mui/material";
 
-const Characters = ({ results }) => {
+const Character = ({ results }) => {
   if (results) {
     return results.map(({ id, image, name, species, status }) => {
       return (
@@ -47,4 +47,4 @@ const Characters = ({ results }) => {
   }
 };
 
-export default Characters;
+export default Character;

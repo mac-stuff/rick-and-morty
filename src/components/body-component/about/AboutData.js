@@ -1,6 +1,6 @@
 import image from "../assets/image.jpeg";
 import data from "../assets/data.js";
-import { CardMedia, Avatar, Grid, Typography } from "@mui/material";
+import { CardMedia, Grid, Typography } from "@mui/material";
 
 const AboutMeData = () => {
   return (
