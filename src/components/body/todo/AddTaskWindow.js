@@ -56,14 +56,11 @@ const AddTask = ({ onAdd }) => {
             label="add a date"
             type="date"
             defaultValue="2022-07-13"
-            sx={{ width: 220 }}
+            sx={{ width: 220, backgroundColor: "#33FF00" }}
             InputLabelProps={{
               shrink: true,
             }}
             onChange={(e) => setDay(e.target.value)}
-            sx={{
-              backgroundColor: "#33FF00",
-            }}
           ></TextField>
           <Button
             variant="contained"

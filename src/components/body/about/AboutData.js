@@ -32,7 +32,6 @@ const AboutMeData = () => {
             maxWidth: 350,
             borderRadius: "50%",
             margin: "2% auto",
-            borderRadius: "50%",
           }}
           image={image}
           alt={data.name}
