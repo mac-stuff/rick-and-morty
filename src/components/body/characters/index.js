@@ -17,8 +17,20 @@ const Characters = () => {
   }, [api]);
 
   return (
-    <Grid container>
-      <CharacterCard results={results} />
+    <Grid
+      item
+      xs={12}
+      sx={{
+        backgroundColor: "#FF0099",
+        borderRadius: "15px",
+        padding: "15px",
+        margin: "2px",
+        justifyItems: "center",
+      }}
+    >
+      <Grid container>
+        <CharacterCard results={results} />
+      </Grid>
       <CharacterPagination
         info={info}
         pageNumber={pageNumber}

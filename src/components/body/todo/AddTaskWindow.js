@@ -27,7 +27,6 @@ const AddTaskWindow = ({ onAdd }) => {
     <Grid
       item
       xs={12}
-      spacing={15}
       sx={{
         backgroundColor: "#DFFF00",
         borderRadius: "15px",

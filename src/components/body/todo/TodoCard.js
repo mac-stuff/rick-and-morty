@@ -6,21 +6,22 @@ const TodoCard = ({ tasks, onDelete }) => {
     <Grid
       item
       sx={{
-        backgroundColor: "#DFFF00",
+        backgroundColor: "#FF0099",
         borderRadius: "15px",
         margin: "2px",
         padding: "10px",
       }}
     >
-      {tasks.map((task) => (
+      {tasks.map((task, id) => (
         <Card
+          key={id}
           sx={{
             minWidth: 200,
             flexDirection: "column",
             borderRadius: "15px",
             margin: "10px",
             padding: "5px",
-            backgroundColor: "tomato",
+            backgroundColor: "#33FF00",
             textAlign: "center",
           }}
         >

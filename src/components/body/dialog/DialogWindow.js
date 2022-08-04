@@ -5,7 +5,6 @@ const DialogWindow = ({ stack, level }) => {
     <Grid
       item
       xs={12}
-      spacing={15}
       sx={{
         backgroundColor: "#33FF00",
         borderRadius: "15px",
