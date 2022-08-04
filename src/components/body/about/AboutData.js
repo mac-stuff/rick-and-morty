@@ -1,27 +1,17 @@
 import image from "../assets/image.jpeg";
 import data from "../assets/data.js";
-import { CardMedia, Grid, Typography } from "@mui/material";
+import { Container, CardMedia, Grid, Typography } from "@mui/material";
 
 const AboutData = () => {
   return (
-    <Grid
-      container
-      position="static"
-      sx={{
-        borderRadius: "15px",
-        marginBottom: "2px",
-        padding: "10px",
-        margin: "2px",
-        backgroundColor: "#DFFF00",
-      }}
-    >
+    <Container>
       <Grid
         item
         xs={12}
         sx={{
           backgroundColor: "#FF0099",
           borderRadius: "15px",
-          padding: "5px",
+          padding: "15px",
           margin: "2px",
           justifyItems: "center",
         }}
@@ -54,7 +44,7 @@ const AboutData = () => {
           align="center"
           color="text.primary"
           gutterBottom
-          sx={{ padding: "5% 5% 2% 5%", fontSize: "2rem", color: "#33FF00" }}
+          sx={{ padding: "5% 5% 2% 5%", fontSize: "2rem" }}
         >
           {data.name}
         </Typography>
@@ -68,7 +58,7 @@ const AboutData = () => {
           {data.cv}
         </Typography>
       </Grid>
-    </Grid>
+    </Container>
   );
 };
 

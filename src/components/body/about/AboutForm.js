@@ -27,29 +27,26 @@ const AboutForm = ({ logo, setLogo }) => {
         borderRadius: "15px",
         margin: "1px",
         padding: "15px",
-        backgroundColor: "tomato",
       }}
     >
-      <form onSubmit={submitHandler}>
-        <Stack direction="row" spacing={2} justifyContent="center">
-          <TextField
-            id="filled-basic"
-            label="custom logo"
-            variant="filled"
-            value={customLogo}
-            onChange={logoHandler}
-            sx={{ backgroundColor: "#DFFF00" }}
-          ></TextField>
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
-            size="medium"
-          >
-            send
-          </Button>
-        </Stack>
-      </form>
+      <Stack direction="row" spacing={2} justifyContent="center">
+        <TextField
+          label="custom logo"
+          variant="filled"
+          value={customLogo}
+          onChange={logoHandler}
+          sx={{ backgroundColor: "#33FF00" }}
+        ></TextField>
+        <Button
+          variant="contained"
+          color="primary"
+          type="submit"
+          size="medium"
+          onClick={submitHandler}
+        >
+          send
+        </Button>
+      </Stack>
     </Grid>
   );
 };

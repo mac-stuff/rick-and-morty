@@ -1,13 +1,13 @@
 import AboutData from "./AboutData";
 import AboutForm from "./AboutForm";
-import { Container } from "@mui/material";
+import { Grid } from "@mui/material";
 
 const About = ({ logo, setLogo }) => {
   return (
-    <Container>
+    <Grid>
       <AboutData />
       <AboutForm logo={logo} setLogo={setLogo} />
-    </Container>
+    </Grid>
   );
 };
 export default About;
