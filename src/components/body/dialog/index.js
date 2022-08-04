@@ -47,7 +47,6 @@ const Dialogs = () => {
     <Grid
       item
       xs={12}
-      spacing={15}
       sx={{
         backgroundColor: "#FF0099",
         minHeight: "600px",

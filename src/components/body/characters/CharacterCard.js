@@ -5,13 +5,14 @@ const CharacterCard = ({ results }) => {
     return results.map(({ id, image, name, species, status }) => {
       return (
         <Card
+          key={id}
           sx={{
             maxWidth: 200,
             flexDirection: "column",
             borderRadius: "15px",
             margin: "1px",
             padding: "5px",
-            backgroundColor: "#FF0099",
+            backgroundColor: "#33FF00",
             textAlign: "center",
           }}
         >

@@ -26,7 +26,7 @@ const Appbar = ({ setSelectedButton, logo }) => {
             {logo}
           </Typography>
           <Stack direction="row" spacing={2} sx={{ flexGrow: 1 }}>
-            <Grid spacing={{ xs: 3, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+            <Grid columns={{ xs: 4, sm: 8, md: 12 }}>
               {buttons.map((button) => (
                 <AppbarButton
                   key={button}

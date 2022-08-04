@@ -63,7 +63,6 @@ function App() {
           <Grid
             item
             xs={12}
-            spacing={15}
             sx={{
               backgroundColor: "#DFFF00",
               borderRadius: "15px",
@@ -81,7 +80,6 @@ function App() {
           <Grid
             item
             xs={12}
-            spacing={5}
             sx={{ backgroundColor: "#9900FF", borderRadius: "15px" }}
           >
             <Footer />

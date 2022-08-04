@@ -6,14 +6,11 @@ const AboutData = () => {
   return (
     <Container>
       <Grid
-        item
-        xs={12}
         sx={{
-          backgroundColor: "#FF0099",
+          backgroundColor: "#33FF00",
+          padding: "5px",
+          margin: "5px",
           borderRadius: "15px",
-          padding: "15px",
-          margin: "2px",
-          justifyItems: "center",
         }}
       >
         <CardMedia
@@ -28,14 +25,11 @@ const AboutData = () => {
         />
       </Grid>
       <Grid
-        item
-        xs={12}
         sx={{
-          backgroundColor: "#FF0099",
-          borderRadius: "15px",
+          backgroundColor: "#33FF00",
           padding: "5px",
-          margin: "2px",
-          justifyItems: "center",
+          margin: "5px",
+          borderRadius: "15px",
         }}
       >
         <Typography
