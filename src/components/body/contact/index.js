@@ -48,40 +48,33 @@ const Contact = () => {
         textAlign: "center",
       }}
     >
-      <form onSubmit={submitHandler}>
-        <Stack
-          direction="row"
-          spacing={2}
-          justifyContent="center"
-          sx={{ pt: 4 }}
+      <Stack direction="row" spacing={2} justifyContent="center" sx={{ pt: 4 }}>
+        <TextField
+          id="filled-basic"
+          label="email"
+          variant="filled"
+          onChange={emailHandler}
+          value={email}
+          sx={{ backgroundColor: "#DFFF00" }}
+        ></TextField>
+        <TextField
+          id="filled-basic"
+          label="message"
+          variant="filled"
+          onChange={messageHandler}
+          value={message}
+          sx={{ backgroundColor: "#DFFF00" }}
+        ></TextField>
+        <Button
+          variant="contained"
+          color="primary"
+          type="submit"
+          size="medium"
+          onClick={submitHandler}
         >
-          <TextField
-            id="filled-basic"
-            label="email"
-            variant="filled"
-            onChange={emailHandler}
-            value={email}
-            sx={{ backgroundColor: "#DFFF00" }}
-          ></TextField>
-          <TextField
-            id="filled-basic"
-            label="message"
-            variant="filled"
-            onChange={messageHandler}
-            value={message}
-            sx={{ backgroundColor: "#DFFF00" }}
-          ></TextField>
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
-            size="medium"
-          >
-            send
-          </Button>
-        </Stack>
-      </form>
-
+          send
+        </Button>
+      </Stack>
       {isSent ? <ContactWindow data={data} /> : ""}
     </Grid>
   );

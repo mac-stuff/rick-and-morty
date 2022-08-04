@@ -17,18 +17,19 @@ const CharacterCard = ({ results }) => {
         >
           <CardMedia
             component="img"
-            sx={{
-              pt: "5%",
-              borderRadius: "50px",
-            }}
             image={image}
             alt={name}
+            sx={{
+              pt: "5%",
+              borderRadius: "50%",
+              padding: "15px",
+            }}
           />
           <Typography
             variant="body1"
             gutterBottom
             color="textSecondary"
-            sx={{ align: "center" }}
+            sx={{ pt: "5%", align: "center" }}
           >
             {name}
           </Typography>

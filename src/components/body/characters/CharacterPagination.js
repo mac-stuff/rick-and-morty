@@ -11,7 +11,6 @@ const CharacterPagination = ({ info, setPageNumber }) => {
         borderRadius: "15px",
         margin: "1px",
         padding: "15px",
-        backgroundColor: "#FF0099",
       }}
     >
       <Pagination

@@ -35,43 +35,37 @@ const AddTaskWindow = ({ onAdd }) => {
         padding: "10px",
       }}
     >
-      <form onSubmit={onSubmit}>
-        <Stack
-          direction="row"
-          spacing={2}
-          justifyContent="center"
-          sx={{ pt: 4 }}
+      <Stack direction="row" spacing={2} justifyContent="center" sx={{ pt: 4 }}>
+        <TextField
+          variant="filled"
+          label="add task"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          sx={{
+            backgroundColor: "#33FF00",
+          }}
+        ></TextField>
+        <TextField
+          variant="filled"
+          label="add a date"
+          type="date"
+          defaultValue="2022-07-13"
+          onChange={(e) => setDay(e.target.value)}
+          sx={{ width: 220, backgroundColor: "#33FF00" }}
+          InputLabelProps={{
+            shrink: true,
+          }}
+        ></TextField>
+        <Button
+          variant="contained"
+          color="primary"
+          type="submit"
+          size="medium"
+          onClick={onSubmit}
         >
-          <TextField
-            variant="filled"
-            label="add task"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            sx={{
-              backgroundColor: "#33FF00",
-            }}
-          ></TextField>
-          <TextField
-            variant="filled"
-            label="add a date"
-            type="date"
-            defaultValue="2022-07-13"
-            onChange={(e) => setDay(e.target.value)}
-            sx={{ width: 220, backgroundColor: "#33FF00" }}
-            InputLabelProps={{
-              shrink: true,
-            }}
-          ></TextField>
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
-            size="medium"
-          >
-            send
-          </Button>
-        </Stack>
-      </form>
+          send
+        </Button>
+      </Stack>
     </Grid>
   );
 };
