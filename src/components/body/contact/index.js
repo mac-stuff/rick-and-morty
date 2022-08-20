@@ -16,11 +16,24 @@ const Contact = () => {
     setMessage(event.target.value);
   };
 
+  const validateEmail = (email) => {
+    const validator = require("email-validator");
+    if (validator.validate(email)) {
+      return true;
+    }
+    return false;
+  };
+
   const submitHandler = (event) => {
     event.preventDefault();
 
     if (!email) {
       alert("add a email first");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      alert("You have entered an invalid email address!");
       return;
     }
 

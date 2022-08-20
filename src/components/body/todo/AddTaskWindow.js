@@ -48,7 +48,6 @@ const AddTaskWindow = ({ onAdd }) => {
           variant="filled"
           label="add a date"
           type="date"
-          defaultValue="2022-07-13"
           onChange={(e) => setDay(e.target.value)}
           sx={{ width: 220, backgroundColor: "#33FF00" }}
           InputLabelProps={{
