@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "../assets/data";
+import data from "../../../assets/data";
 import TodoCard from "./TodoCard";
 import AddTaskWindow from "./AddTaskWindow";
 import { Button, Grid } from "@mui/material";

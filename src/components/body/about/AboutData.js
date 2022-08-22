@@ -1,5 +1,5 @@
-import image from "../assets/image.jpeg";
-import data from "../assets/data.js";
+import image from "../../../assets/image.jpeg";
+import data from "../../../assets/data.js";
 import { Container, CardMedia, Grid, Typography } from "@mui/material";
 
 const AboutData = () => {
